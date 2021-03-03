@@ -5,9 +5,9 @@
     background-image: linear-gradient(180.0deg, rgba(0,0,0,0.05) -6%, rgba(0,0,0,0.0) 50%, rgba(0,0,0,0.0) 106%);
 
 
-    // @include responsive(1366px) {
-    //     padding-bottom: 5.198vws;
-    // }
+    @include responsive(mobile) {
+        padding-bottom: 15vw;
+    }
 
     .container {
         z-index: 10;
