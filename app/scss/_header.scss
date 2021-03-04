@@ -15,7 +15,8 @@
 
     &__logo {
         display: flex;
-        align-items: center;  
+        align-items: center;
+        margin-left: -0.208vw;
         
         img {
             width: 7.917vw;
@@ -33,6 +34,7 @@
     &__text {
         width: 9.635vw;
         margin-left: 2.135vw;
+        margin-bottom: 0.417vw;
         font-size: 0.625vw;
         line-height: 0.833vw;
         font-weight: 400;
@@ -72,6 +74,8 @@
     &__center {
         display: flex;
         align-items: center;
+        margin-bottom: 0.625vw;
+        margin-right: 0.313vw;
 
         @include responsive(mobile) {
             width: 100%;

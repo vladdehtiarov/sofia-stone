@@ -103,13 +103,21 @@ p {
 
 .wa-media {
     margin-left: 0;
-    background-color: #36a35d;
+    box-shadow: 0px 5px 10px 0 rgba(66, 168, 103, 0.45);
+    background: rgb(127,196,151);
+    background: linear-gradient(180deg, rgba(127,196,151,1) 43%, rgba(71,171,106,1) 100%);
 }
 
+  
+
 .viber-media {
-    background-color: #825ade
+    box-shadow: 0px 5px 10px 0 rgba(130, 90, 222, 0.45);
+    background: rgb(173,147,233);
+    background: linear-gradient(180deg, rgba(173,147,233,1) 43%, rgba(133,94,223,1) 100%);
 }
 
 .tg-media {
-    background-color: #4582d4;
+    box-shadow: 0px 5px 10px 0 rgba(76, 135, 214, 0.45);
+    background: rgb(138,176,228);
+    background: linear-gradient(180deg, rgba(138,176,228,1) 43%, rgba(73,133,213,1) 100%);
 }

@@ -1,5 +1,6 @@
 .checkpoints {
     margin-top: 5.208vw;
+    margin-left: 0.260vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,7 +16,7 @@
     &__item {
         width: 20.833vw;
         height: 11.458vw;
-        padding: 2.083vw 0 1.771vw 2.083vw;
+        padding: 2.031vw 0 2.083vw 2.083vw;
         border-radius: 2.344vw;
         box-shadow: 0px 0.938vw 2.448vw 0.208vw rgba(0, 0, 0, 0.14);
         background-color: #ffffff;
@@ -40,6 +41,10 @@
         }
     }
 
+    &__item:last-child {
+        margin-right: 0.260vw;
+    }
+
 
     &__title {
         // width: 11.198vw;
@@ -60,7 +65,7 @@
 
     &__text {
         // width: 10.417vw;
-        margin-top: 1.094vw;
+        margin-top: 0.938vw;
         font-size: 0.729vw;
         font-weight: 400;
         line-height: 1.43;
@@ -106,7 +111,7 @@
     .img-present, 
     .img-tile {
         right: 0;
-        top: 50%;
+        top: 56%;
         transform: translateY(-50%);
     }
 
@@ -136,7 +141,7 @@
 
     .img-machine {
         width: 13.021vw;
-        top: 50%;
+        top: 51%;
         left: 50%;
         transform: translate(25%, -50%);
 
