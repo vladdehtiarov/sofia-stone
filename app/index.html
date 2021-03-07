@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
-    <script defer src="js/main.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
     <header class="header">
@@ -53,13 +53,13 @@
                         <span class="green-marcker"></span> Спросите у специалиста в чате
                     </div>
                     <div class="media__list">
-                        <a href="#" class="media__item wa-media">
+                        <a href="#" class="media__item wa-media active-btn">
                             WhatsApp
                         </a>
-                        <a href="#" class="media__item viber-media">
+                        <a href="#" class="media__item viber-media active-btn">
                             Viber
                         </a>
-                        <a href="#" class="media__item tg-media">
+                        <a href="#" class="media__item tg-media active-btn">
                             Telegram
                         </a>
                     </div>
@@ -81,7 +81,7 @@
                 <ul class="menu">
                     <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Калькулятор</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#services">Услуги</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Материал</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Портфолио</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
@@ -117,7 +117,7 @@
                     </div>
 
                     <div class="prise-block">
-                        <a href="#" class="by-btn">
+                        <a href="#" class="by-btn active-btn">
                             <div class="prise-block__prise">
                                 <div class="prise-title">рассчитать стоимость за 1 минуту</div>
                                 <div class="prise-text">+ получи гарантированный подарок</div>
@@ -140,7 +140,7 @@
 
                 <div class="checkpoints">
                     <div class="checkpoints__item">
-                        <img class="checkpoints-img img-ok" src="../images/galka.png" alt="ok">
+                        <img class="checkpoints-img img-ok" src="../images/ok.svg" alt="ok">
                         <img class="checkpoints-img img-present" src="../images/present.png" alt="present">
                         <div class="checkpoints__title">Подарок каждому<br> клиенту</div>
                         <div class="checkpoints__text">
@@ -151,7 +151,7 @@
                     </div>
 
                     <div class="checkpoints__item">
-                        <img class="checkpoints-img img-ok" src="../images/galka.png" alt="ok">
+                        <img class="checkpoints-img img-ok" src="../images/ok.svg" alt="ok">
                         <img class="checkpoints-img img-tile" src="../images/tile.png" alt="tile">
                         <div class="checkpoints__title">От 6900 р. за погоный<br> метр изделия</div>
                         <div class="checkpoints__text">
@@ -162,7 +162,7 @@
                     </div>
 
                     <div class="checkpoints__item">
-                        <img class="checkpoints-img img-ok" src="../images/galka.png" alt="ok">
+                        <img class="checkpoints-img img-ok" src="../images/ok.svg" alt="ok">
                         <img class="checkpoints-img img-machine" src="../images/machine.png" alt="machine">
                         <div class="checkpoints__title">Высокое качество<br>каждого изделия</div>
                         <div class="checkpoints__text">
@@ -175,7 +175,253 @@
                 </div>
             </div>
         </section>
-    </main>
+
+        <section class="services-section" id="services">
+            <section class="services">
+                <div class="container">
+                    <div class="section__title">
+                        <h2 class="section__title-title">Наши услуги</h2>
+                        <p class="section__title-subtitle">
+                            Предлагаем широкий асортимент простых недорогих изделий
+                            из 750 отенков искусственного камня по Вашим размерам.
+                        </p>
+                    </div>
+        
+                    <div class="services-list">
+                        <div class="services-list__item">
+                            <div class="services-list__img-wrapp">
+                                <img class="ok-img" src="../images/ok.svg" alt="ok">
+                            </div>
+                            <div class="services-list__label">Столешницы для кухни</div>
+                        </div>
+        
+                        <div class="services-list__item">
+                            <div class="services-list__img-wrapp">
+                                <img class="ok-img" src="../images/ok.svg" alt="ok">
+                            </div>
+                            <div class="services-list__label">Столешницы для ванной</div>
+                        </div>
+        
+                        <div class="services-list__item">
+                            <div class="services-list__img-wrapp">
+                                <img class="ok-img" src="../images/ok.svg" alt="ok">
+                            </div>
+                            <div class="services-list__label">Столы из камня</div>
+                        </div>
+        
+                        <div class="services-list__item">
+                            <div class="services-list__img-wrapp">
+                                <img class="ok-img" src="../images/ok.svg" alt="ok">
+                            </div>
+                            <div class="services-list__label">Ресепшн и барные стойки</div>
+                        </div>
+        
+                        <div class="services-list__item">
+                            <div class="services-list__img-wrapp">
+                                <img class="ok-img" src="../images/ok.svg" alt="ok">
+                            </div>
+                            <div class="services-list__label">Подоконники</div>
+                        </div>
+        
+                        <div class="services-list__item">
+                            <div class="services-list__img-wrapp">
+                                <img class="ok-img" src="../images/ok.svg" alt="ok">
+                            </div>
+                            <div class="services-list__label">Ступени и лестницы</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="download">
+                <div class="container">
+                    <div class="catalog-download">
+                        <img class="catalog-download__img img-booklet" src="../images/booklet.png" alt="booklet">
+                        <img class="catalog-download__img img-hand" src="../images/hand.png" alt="hand">
+                        <div class="catalog-download__inner">
+                            <div class="catalog-download__pdf-size">PDF: 0,3 Mb</div>
+                            <div class="catalog-download__title">
+                                Скачайте каталог с ценами на простые изделия
+                                в один клик прямо в WhatsApp
+                            </div>
+                            <form class="catalog-download__form">
+                                <img class="img-whatsapp" src="../images/whatsap-icon.png" alt="whatsapp">
+                                <input class="form-elem input-number" type="text" placeholder="Номер в WhatsApp" required>
+                                <button class="form-elem download-pdf-btn active-btn">
+                                    <img class="img-pdf-icon" src="../images/pdf-icon.png" alt="pdf">
+                                    скачать каталог
+                                </button>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        
+            <section class="non-standard-tasks">
+                <div class="container">
+                    <div class="section__title">
+                        <p class="section__title-subtitle">
+                            Опыт мастеров и оборудование позволяет нам
+                            реализовывать нестандартные задачи.
+                        </p>
+                    </div>
+            
+                    <div class="services-list">
+                        <div class="services-list__item">
+                            <div class="services-list__img-wrapp">
+                                <img class="ok-img" src="../images/ok.svg" alt="ok">
+                            </div>
+                            <div class="services-list__label">Делаем без швов</div>
+                        </div>
+            
+                        <div class="services-list__item">
+                            <div class="services-list__img-wrapp">
+                                <img class="ok-img" src="../images/ok.svg" alt="ok">
+                            </div>
+                            <div class="services-list__label">Гнем камень в 3-х плоскостях</div>
+                        </div>
+            
+                        <div class="services-list__item">
+                            <div class="services-list__img-wrapp">
+                                <img class="ok-img" src="../images/ok.svg" alt="ok">
+                            </div>
+                            <div class="services-list__label">Любой рисунок по эскизу</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="interior-solutions">
+                <div class="container">
+                    <div class="section__title">
+                        <h2 class="section__title-title">Архитектору и дизайнеру</h2>
+                        <p class="section__title-subtitle">
+                            Поможем реализовать самые смелые
+                            интерьерные решения.
+                        </p>
+                    </div>
+        
+                    <div class="services-list">
+                        <div class="services-list__item">
+                            <div class="services-list__img-wrapp">
+                                <img class="ok-img" src="../images/ok.svg" alt="ok">
+                                <img class="services-list__image" src="../images/spiral-staircases.jpg" alt="spiral-staircases">
+                            </div>
+                            <div class="services-list__label">Винтовые лестницы</div>
+                        </div>
+            
+                        <div class="services-list__item">
+                            <div class="services-list__img-wrapp">
+                                <img class="ok-img" src="../images/ok.svg" alt="ok">
+                                <img class="services-list__image" src="../images/CNC-punching.jpg" alt="CNC-punching">
+                            </div>
+                            <div class="services-list__label">Вырезы и перфорация на ЧПУ</div>
+                        </div>
+            
+                        <div class="services-list__item">
+                            <div class="services-list__img-wrapp">
+                                <img class="ok-img" src="../images/ok.svg" alt="ok">
+                                <img class="services-list__image" src="../images/combination.jpg" alt="combination">
+                            </div>
+                            <div class="services-list__label">Комбинации с другими материалами</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="download">
+                <div class="container">
+                    <div class="catalog-download">
+                        <img class="catalog-download__img img-booklet" src="../images/booklet.png" alt="booklet">
+                        <img class="catalog-download__img img-hand" src="../images/hand.png" alt="hand">
+                        <div class="catalog-download__inner">
+                            <div class="catalog-download__pdf-size">PDF: 0,3 Mb</div>
+                            <div class="catalog-download__title">
+                                Скачайте каталог с ценами на сложные изделия 
+                                в один клик прямо в WhatsApp
+                            </div>
+                            <form class="catalog-download__form">
+                                <img class="img-whatsapp" src="../images/whatsap-icon.png" alt="whatsapp">
+                                <input class="form-elem input-number" type="text" placeholder="Номер в WhatsApp" required>
+                                <button class="form-elem download-pdf-btn active-btn">
+                                    <img class="img-pdf-icon" src="../images/pdf-icon.png" alt="pdf">
+                                    скачать каталог
+                                </button>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="payment-sms" id="payment-sms">
+            <img class="payment-sms__bg-img" src="../images/payment-sms.png" alt="payment">
+            <div class="container">
+                <div class="payment-sms__inner">
+                    <div class="section__title">
+                        <h2 class="section__title-title">Расчет через СМС</h2>
+                        <p class="section__title-subtitle">
+                            Отправьте изображение и размеры,
+                            и мы рассчитаем точную стоимость
+                            вашего изделия в течение 30 минут.
+                        </p>
+                    </div>
     
+                    <div class="payment-sms__icon-wrapper">
+                        <div class="payment-sms__icons-label">
+                            Нажмите на иконку, 
+                            чтобы перейти в Чат:
+                        </div>
+                        <div class="payment-sms__icons-list">
+                            <a href="#" class="payment-sms__icons-item">
+                                <div class="icons-item__image icons-whatsapp">
+                                    <img src="../images/whatsap.svg" alt="whatsap">
+                                </div>
+                                <div class="icons-item__label">WhatsApp</div>
+                            </a>
+                            <a href="#" class="payment-sms__icons-item">
+                                <div class="icons-item__image icons-viber">
+                                    <img src="../images/viber.svg" alt="viber">
+                                </div>
+                                <div class="icons-item__label">Viber</div>
+                            </a>
+                            <a href="#" class="payment-sms__icons-item">
+                                <div class="icons-item__image icons-telegram">
+                                    <img src="../images/telegram.svg" alt="telegram">
+                                </div>
+                                <div class="icons-item__label">Telegram</div>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="payment-sms__image">
+                        <img src="../images/phone.png" alt="phone">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-block">
+                <div class="slide" id="slide-2">
+                    <img src="../images/slide-2.jpg" alt="slide-2">
+                </div>
+    
+                <div class="slide" id="slide-3">
+                    <img src="../images/slide-3.jpg" alt="slide-3">
+                </div>
+                
+                <div class="slide" id="slide-1">
+                    <img src="../images/slide-1.jpg" alt="slide-1">
+                </div>
+            </div>
+    
+        </section>
+    </main>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia stone</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+
+    <section class="payment-sms">
+        <img class="payment-sms__bg-img" src="../images/payment-sms.png" alt="payment">
+        <div class="container">
+            <div class="payment-sms__inner">
+                <div class="section__title">
+                    <h2 class="section__title-title">Расчет через СМС</h2>
+                    <p class="section__title-subtitle">
+                        Отправьте изображение и размеры,
+                        и мы рассчитаем точную стоимость
+                        вашего изделия в течение 30 минут.
+                    </p>
+                </div>
+
+                <div class="payment-sms__icon-wrapper">
+                    <div class="payment-sms__icons-label">
+                        Нажмите на иконку, 
+                        чтобы перейти в Чат:
+                    </div>
+                    <div class="payment-sms__icons-list">
+                        <a href="#" class="payment-sms__icons-item">
+                            <div class="icons-item__image icons-whatsapp">
+                                <img src="../images/whatsap.svg" alt="whatsap">
+                            </div>
+                            <div class="icons-item__label">WhatsApp</div>
+                        </a>
+                        <a href="#" class="payment-sms__icons-item">
+                            <div class="icons-item__image icons-viber">
+                                <img src="../images/viber.svg" alt="viber">
+                            </div>
+                            <div class="icons-item__label">Viber</div>
+                        </a>
+                        <a href="#" class="payment-sms__icons-item">
+                            <div class="icons-item__image icons-telegram">
+                                <img src="../images/telegram.svg" alt="telegram">
+                            </div>
+                            <div class="icons-item__label">Telegram</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="payment-sms__image">
+                    <img src="../images/phone.png" alt="phone">
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-block">
+            <div class="slide" id="slide-2">
+                <img src="../images/slide-2.jpg" alt="slide-2">
+            </div>
+
+            <div class="slide" id="slide-3">
+                <img src="../images/slide-3.jpg" alt="slide-3">
+            </div>
+            
+            <div class="slide" id="slide-1">
+                <img src="../images/slide-1.jpg" alt="slide-1">
+            </div>
+        </div>
+
+    </section>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $('.slider-block').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToSckroll: 1,
+            centerMode: true,
+            variableWidth: true,
+            prevArrow: `<button class="slider__btn prew-slide">
+                            <img src="../images/arrow.svg" alt="arrow">
+                        </button>`,
+            nextArrow: `<button class="slider__btn next-slide">
+                            <img src="../images/arrow.svg" alt="arrow">
+                        </button>`,
+        });
+    </script>
+</body>
+</html>

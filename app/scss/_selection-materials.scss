@@ -1,0 +1,94 @@
+// selection-materials styles
+.selection-materials {
+    width: 100%;
+    padding-top: 4.427vw;
+    padding-bottom: 3.698vw;
+
+    @include responsive(mobile) {
+        padding-top: 15.667vw;
+        padding-bottom: 11.833vw;
+    }
+
+    .container {
+        max-width: 68.750vw;
+
+        @include responsive(mobile) {
+            max-width: 95%;
+        }
+    }
+
+    &__title {
+        font-family: "Philosopher";
+        font-size: 1.875vw;
+        font-weight: bold;
+        line-height: 1.28;
+        text-align: center;
+        color: #333333;
+
+        @include responsive(mobile) {
+            font-size: 6vw;
+        }
+    }
+
+    &__inner {
+        margin-top: 1.510vw;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: space-between;
+
+        @include responsive(mobile) {
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 5.667vw;
+        }
+    }
+
+    &__item:first-child {
+        .selection-materials__item-img {
+            @include responsive(mobile) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__item-img {
+        width: 20.833vw;
+        height: 14.583vw;
+        border-radius: 2.865vw;
+        position: relative;
+        overflow: hidden;
+
+        @include responsive(mobile) {
+            margin: 0 auto;
+            margin-top: 6.667vw;
+            width: 66.667vw;
+            height: 46.667vw;
+            border-radius: 9.167vw;
+        }
+
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__item-label {
+        margin-top: 0.260vw;
+        font-size: 0.938vw;
+        font-weight: 500;
+        line-height: 1.78;
+        text-align: center;
+        color: #555555;
+
+        @include responsive(mobile) {
+            margin-top: 1.667vw;
+            font-size: 3vw;
+        }
+    }
+}

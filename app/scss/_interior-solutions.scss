@@ -1,0 +1,47 @@
+// interior-solutions styles
+.interior-solutions {
+    margin-top: 5.417vw;
+
+    @include responsive(mobile) {
+        margin-top: 15vw;
+    }
+
+    .container {
+        max-width: 68.750vw;
+
+        @include responsive(mobile) {
+            max-width: 95%;
+        }
+    }
+
+    .section__title {
+        &-subtitle {
+            width: 33.594vw;
+
+            @include responsive(mobile) {
+                width: 100%;
+            }
+        }
+    }
+
+    .services-list {
+        margin-top: 1.510vw;
+
+        &__img-wrapp {
+            width: 20.833vw;
+            height: 17.708vw;
+            border-radius: 2.604vw;
+
+            @include responsive(mobile) {
+                width: 66.667vw;
+                height: 56.667vw;
+                border-radius: 8.333vw;
+            }
+        }
+    
+        &__label {
+            margin-top: 0.313vw;
+
+        }
+    }
+}

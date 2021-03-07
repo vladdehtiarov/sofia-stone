@@ -1,0 +1,145 @@
+// services styles
+
+.services {
+    width: 100%;
+    margin-top: 0.990vw;
+    padding-top: 4.167vw;
+    border-top: 0.104vw solid #cfccd7;
+
+    @include responsive(mobile) {
+        padding-top: 10vw;
+        margin-top: 3.167vw;
+        border-top: 0.333vw solid #cfccd7;
+    }
+
+    .container {
+        max-width: 68.750vw;
+
+        @include responsive(mobile) {
+            max-width: 95%;
+        }
+    }
+}
+
+.section__title {
+
+    &-title {
+        font-family: "Philosopher";
+        font-size: 2.500vw;
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
+        color: #333333;
+
+        @include responsive(mobile) {
+            font-size: 8vw;
+        }
+    }
+
+    &-subtitle {
+        width: 56.250vw;
+        margin: 0 auto;
+        margin-top: 0.625vw;
+        font-size: 1.667vw;
+        font-weight: 500;
+        line-height: 1.25;
+        text-align: center;
+        color: #777777;
+
+        @include responsive(mobile) {
+            width: 94%;
+            margin-top: 2.333vw;
+            font-size: 5.333vw;
+        }
+    }
+}
+
+.services-list {
+    width: 100%;
+    margin-top: 2.083vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @include responsive(mobile) {
+        flex-direction: column;
+    }
+
+    
+
+    &__item {
+        display: inline-block;
+        margin-top: 1.406vw;
+
+        @include responsive(mobile) {
+            margin-top: 8.333vw;
+        }
+    }
+
+
+    &__item:first-child,
+    &__item:nth-child(2),
+    &__item:nth-child(3) {
+        margin-top: 0;
+
+        @include responsive(mobile) {
+            margin-top: 8.333vw;
+        }
+    }
+
+    &__img-wrapp {
+        width: 20.833vw;
+        height: 14.583vw;
+        border-radius: 2.604vw;
+        background-color: #a0a0a0;
+        position: relative;
+        overflow: hidden;
+
+        @include responsive(mobile) {
+            width: 66.667vw;
+            height: 46.667vw;
+            border-radius: 8.333vw;
+        }
+
+        .ok-img {
+            width: 2.2vw;
+            position: absolute;
+            top: 1.563vw;
+            right: 1.563vw;
+            z-index: 50;
+
+            @include responsive(mobile) {
+                width: 6.667vw;
+                top: 5vw;
+                right: 5vw;
+            }
+        }
+    }
+
+    &__image {
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        z-index: 40;
+    }
+
+    &__label {
+        margin-top: 0.573vw;
+        font-size: 0.938vw;
+        font-weight: 500;
+        line-height: 1.22;
+        text-align: center;
+        color: #555555;
+
+        @include responsive(mobile) {
+            margin-top: 11px;
+            font-size: 3vw;
+        }
+    }
+}

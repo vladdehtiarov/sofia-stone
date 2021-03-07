@@ -1,0 +1,60 @@
+// non-standard-tasks styles
+
+.non-standard-tasks {
+    width: 100%;
+    margin-top: 5.625vw;
+
+    @include responsive(mobile) {
+        margin-top: 15vw;
+    }
+
+    .container {
+        max-width: 60.417vw;
+
+        @include responsive(mobile) {
+            max-width: 95%;
+        }
+    }
+
+    .section__title {
+        &-subtitle {
+            width: 41.927vw;
+
+            @include responsive(mobile) {
+                width: 100%;
+            }
+        }
+    }
+
+    .services-list {
+        margin-top: 1.667vw;
+
+        
+
+        &__img-wrapp {
+            width: 17.708vw;
+            height: 12.500vw;
+            border-radius: 2.604vw;
+
+            @include responsive(mobile) {
+                width: 56.667vw;
+                height: 40vw;
+                border-radius: 8.333vw;
+            }
+        }
+    
+        &__label {
+            margin-top: 0.313vw;
+            font-size: 0.938vw;
+            font-weight: 500;
+            line-height: 1.22;
+            text-align: center;
+            color: #555555;
+
+            @include responsive(mobile) {
+                margin-top: 1.500vw;
+                font-size: 3vw;
+            }
+        }
+    }
+}

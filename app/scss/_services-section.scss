@@ -1,0 +1,11 @@
+.download:last-child {
+    margin-top: 4.844vw;
+}
+
+.services-section {
+    padding-bottom: 5.208vw;
+
+    @include responsive(mobile) {
+        padding-bottom: 16.667vw;
+    }
+}

@@ -1,0 +1,227 @@
+// catalog download styles
+.catalog-download {
+    width: 60.417vw;
+    height: 14.583vw;
+    margin: 0 auto;
+    margin-top: 4.583vw;
+    border-radius: 2.865vw;
+    box-shadow: 0px 0.938vw 2.443vw 0.214vw rgba(0, 0, 0, 0.14);
+    position: relative;
+
+    @include responsive(mobile) {
+        width: 100%;
+        height: 260px;
+        margin-top: 15vw;
+        border-radius: 9.167vw;
+    }
+
+    &__inner {
+        width: 32.292vw;
+        padding-top: 1.042vw;
+        margin-right: 3.854vw;
+        margin-left: auto;
+
+        @include responsive(mobile) {
+            width: 90%;
+            padding-top: 3.333vw;
+            height: inherit;
+            margin: 0 auto;
+        }
+    }
+
+    &__pdf-size {
+        width: 6.250vw;
+        height: 1.563vw;
+        margin-left: 14.323vw;
+        padding: 0.521vw 0.781vw 0.365vw 0.885vw;
+        opacity: 0.75;
+        border-radius: 0.313vw;
+        background-color: #7da4ff;
+        font-size: 0.729vw;
+        font-weight: 500;
+        font-style: italic;
+        line-height: 1;
+        letter-spacing: 0.015vw;
+        color: #ffffff;
+
+        @include responsive(mobile) {
+            width: 20vw;
+            height: 5vw;
+            margin-left: 0;
+            margin: 0 auto; 
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1vw;
+            font-size: 2.333vw;
+            letter-spacing: 0.047vw;
+
+
+        }
+    }
+
+    &__title {
+        width: 29.688vw;
+        margin-top: 1.875vw;
+        margin-left: auto;
+        font-family: "Philosopher";
+        font-size: 1.354vw;
+        font-weight: bold;
+        line-height: 1.08;
+        text-align: center;
+        color: #333333;
+
+        @include responsive(mobile) {
+            width: 100%;
+            font-size: 26px;
+            margin-left: 0;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        margin-top: 1.979vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        @include responsive(mobile) {
+            justify-content: space-between;
+            margin-top: 5vw;
+        }
+
+        .form-elem {
+            width: 13.542vw;
+            height: 3.125vw;
+            border-radius: 1.563vw;
+            outline: none;
+
+            @include responsive(mobile) {
+                width: 40vw;
+                height: 10vw;
+                border-radius: 5vw;
+            }
+        }
+
+        .input-number {
+            margin-right: 0.990vw;
+            padding-left: 1.302vw;
+            padding-right: 1.302vw;
+            border: solid 0.156vw #dcdcdc;
+            background-color: #f4f4f4;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.938vw;
+            font-weight: 500;
+            line-height: 0.89;
+            text-align: left;
+            color: #7da4ff;
+
+            @include responsive(mobile) {
+                margin-right: 0;
+                padding-left: 4.167vw;
+                padding-right: 4.167vw;
+                border: 0.500vw solid #dcdcdc;
+                font-size: 3vw;
+            }
+
+            &::placeholder {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 0.938vw;
+                font-weight: 500;
+                line-height: 0.89;
+                color: #7da4ff;
+
+                @include responsive(mobile) {
+                    font-size: 3vw;
+                }
+            }
+        }
+
+        .download-pdf-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // padding: 0.781vw 1.979vw 0.885vw 2.031vw;
+            box-shadow: 0px 0.521vw 1.042vw 0 rgba(255, 89, 38, 0.55);
+            background-image: linear-gradient(to top, #ff8f6f, #fb5849);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.729vw;
+            font-weight: 600;
+            letter-spacing: 0.029vw;
+            line-height: 1;
+            text-align: left;
+            text-transform: uppercase;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+
+            @include responsive(mobile) {
+                box-shadow: 0px 1.667vw 3.333vw 0 rgba(255, 89, 38, 0.55);
+                font-size: 2.333vw;
+                letter-spacing: 0.093vw;
+            }
+        }
+
+        
+    }
+
+    &__img {
+        position: absolute;
+    }
+
+    .img-booklet {
+        width: 27.656vw;
+        top: -2.396vw;
+        left: -3.490vw;
+
+        @include responsive(mobile) {
+            display: none;
+        }
+    }
+
+    .img-whatsapp {
+        width: 2.604vw;
+        margin-right: 0.781vw;
+        box-shadow: 0px 0.260vw 0.521vw 0 rgba(66, 168, 103, 0.45);
+        border-radius: 0.781vw;
+
+        @include responsive(mobile) {
+            display: none;
+        }
+    }
+
+    .img-pdf-icon {
+        width: 1.302vw;
+        margin-right: 0.313vw;
+
+        @include responsive(mobile) {
+            width: 4.167vw;
+            margin-right: 1vw;
+        }
+    }
+
+    .img-hand {
+        width: 5.208vw;
+        bottom: 0.156vw;
+        right: 0.625vw;
+
+        @include responsive(mobile) {
+            width: 16.667vw;
+            right: 2vw;
+            bottom: 0.500vw;
+        }
+    }
+
+}
+
+.catalog-download:last-child {
+    .catalog-download__title {
+        width: 30.104vw;
+
+        @include responsive(mobile) {
+            width: 100%;
+        }
+    }
+}
+

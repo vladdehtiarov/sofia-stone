@@ -1,0 +1,168 @@
+// manufacturing-technology styles
+.manufacturing-technology {
+    width: 100%;
+    padding-top: 4.167vw;
+    padding-bottom: 3.333vw;
+
+    @include responsive(mobile) {
+        padding-top: 15.833vw;
+        padding-bottom: 10.667vw;
+    }
+
+    .container {
+        max-width: 68.750vw;
+
+        @include responsive(mobile) {
+            max-width: 95%;
+        }
+    }
+
+    .section__title {
+
+        &-title {
+            width: 46vw;
+            margin: 0 auto;
+            margin-top: 0.469vw;
+
+            @include responsive(mobile) {
+                width: 100%;
+                margin-top: 3vw;
+            }
+        }
+    
+        &-subtitle {
+            width: 29vw;
+            font-size: 1.354vw;
+            color: #777777;
+
+            @include responsive(mobile) {
+                width: 100%;
+                font-size: 4.333vw;
+            }
+        }
+    }
+
+    &__inner {
+        width: 100%;
+        margin-top: 2.656vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @include responsive(mobile) {
+            flex-direction: column;
+            margin-top: 8.500vw;
+        }
+    }
+
+    &__item {
+        width: 33.333vw;
+        height: 13.542vw;
+        padding: 0 3.542vw 0 3.646vw;
+        border-radius: 2.865vw;
+        box-shadow: inset 0 0 6.094vw 0 rgba(82, 104, 219, 0.23);
+        background-color: #e0f3ff;
+        position: relative;
+
+        @include responsive(mobile) {
+            width: 100%;
+            height: 43.333vw;
+            padding: 0 6vw;
+            margin-top: 6.667vw;
+        }
+
+    }
+
+    &__item:first-child {
+
+        @include responsive(mobile) {
+            margin-top: 0;
+        }
+
+        .manufacturing-technology__text-content {
+            width: 11.563vw;
+            margin-left: auto;
+            margin-right: 0;
+
+            @include responsive(mobile) {
+                width: 37.500vw;
+            }
+        }
+
+        .manufacturing-technology__img {
+            width: 12.604vw;
+            left: 2.969vw;
+            bottom: 0;
+
+            @include responsive(mobile) {
+               width: 40.333vw;
+               left: 9.500vw;
+            }
+        }
+    }
+
+    &__item:last-child {
+        .manufacturing-technology__img {
+            width: 20.625vw;
+            right: -7.135vw;
+            bottom: -1.823vw;
+
+            @include responsive(mobile) {
+                width: 50vw;
+                right: 0;
+                bottom: -10vw;
+            }
+        }
+        
+        .manufacturing-technology__text {
+            letter-spacing: 0.019vw;
+        }
+    }
+
+    &__text-content {
+        margin-top: 3.281vw;
+
+        @include responsive(mobile) {
+            margin-top: 11.500vw;
+        }
+    }
+
+    &__img {
+        position: absolute;
+    }
+
+    &__title {
+        font-family: "Philosopher";
+        font-size: 1.667vw;
+        font-weight: bold;
+        line-height: 1;
+        text-align: left;
+        color: #333333;
+
+        @include responsive(mobile) {
+            font-size: 5.333vw;
+        }
+    }
+
+    &__text {
+        width: 12vw;
+        margin-top: 1.406vw;
+        font-size: 0.938vw;
+        font-weight: 500;
+        line-height: 1.44;
+        text-align: left;
+        color: #333333;
+
+        @include responsive(mobile) {
+            width: 37.500vw;
+            margin-top: 4.500vw;
+            font-size: 3vw;
+        }
+        
+        span {
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,225 @@
+// payment-sms styles
+
+.payment-sms {
+    width: 100%;
+    height: 39.583vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    // @include responsive(mobile) {
+    //     height: 84vw;
+    // }
+
+    
+    &__bg-img {
+        width: 50vw;
+        height: 39.583vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        // @include responsive(mobile) {
+        //     width: 100%;
+        //     height: 84vw;
+        // }
+    }
+
+    .slider-block {
+        position: absolute;
+        right: 0.469vw;
+        
+    }
+
+    &__inner {
+        width: 68.750vw;
+        height: 25vw;
+        margin: 0 auto;
+        padding: 3.333vw 3.958vw 3.333vw 3.958vw;
+        border-radius: 2.344vw;
+        box-shadow: 0px 0.938vw 2.443vw 0.214vw rgba(0, 0, 0, 0.14);
+        background-color: #fff;
+        position: relative;
+
+        // @include responsive(mobile) {
+        //     width: 100%;
+        //     height: 62vw;
+        // }
+    }
+
+    .section__title {
+        width: 27.083vw;
+
+        // @include responsive(mobile) {
+        //     width: 100%;
+        // }
+
+        &-title {
+            text-align: left;
+            font-size: 2.500vw;;
+
+            // @include responsive(mobile) {
+            //     text-align: center;
+            // }
+        }
+    
+        &-subtitle {
+            width: 27.083vw;
+            margin: 0;
+            margin-top: 1.615vw;
+            padding-bottom: 2.813vw;
+            border-bottom: 0.052vw solid #cccccc;
+            font-size: 1.354vw;
+            font-weight: 500;
+            line-height: 1.23;
+            text-align: left;
+    
+            // @include responsive(mobile) {
+            //     width: 100%;
+            //     margin-top: 5.667vw;
+            //     padding-bottom: 5vw;
+            //     border-bottom: 0.167vw solid #cccccc;
+            //     font-size: 4.333vw;
+            //     text-align: center;
+            // }
+        }
+    }
+
+    &__icon-wrapper {
+        width: 27.083vw;
+        margin-top: 2.031vw;
+        margin-left: 0.260vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        // @include responsive(mobile) {
+        //     width: 100%;
+        //     margin-top: 6vw;
+        //     margin-left: 0;
+        // }
+    }
+
+    &__icons-label {
+        width: 14.271vw;
+        font-family: "Philosopher";
+        font-size: 1.458vw;
+        font-weight: bold;
+        line-height: 1.07;
+        text-align: left;
+        color: #333333;
+
+        // @include responsive(mobile) {
+        //     width: 45.333vw;
+        //     font-size: 4.667vw;
+
+        // }
+    }
+
+    &__icons-list {
+        width: 11.458vw;
+        margin-top: 0.260vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        // @include responsive(mobile) {
+        //     width: 37.333vw;
+        // }
+    }
+
+    .icons-item {
+        &__image {
+            width: 2.604vw;
+            height: 2.604vw;
+            border-radius: 0.781vw;
+            position: relative;
+
+            // @include responsive(mobile) {
+            //     width: 8.333vw;
+            //     height: 8.333vw;
+            //     border-radius: 2.500vw;
+            // }
+
+            img {
+                width: 1.563vw;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                // @include responsive(mobile) {
+                //     width: 5vw;
+                // }
+            }
+        }
+
+        &__label {
+            margin-top: 0.469vw;
+            font-size: 0.625vw;
+            font-weight: 500;
+            line-height: 1.33;
+            letter-spacing: 0.025vw;
+            text-align: center;
+            color: #333333;
+
+            // @include responsive(mobile) {
+            //     margin-top: 1.500vw;
+            //     font-size: 2vw;
+            //     letter-spacing: 0.080vw;
+            // }
+        }
+    }
+
+    .icons-whatsapp {
+        background: rgb(129,197,153);
+        background: linear-gradient(180deg, rgba(129,197,153,1) 50%, rgba(59,165,97,1) 100%);
+        box-shadow: 0px 0.260vw 0.521vw 0 rgba(66, 168, 103, 0.45);
+    }
+
+    .icons-viber {
+        background: rgb(177,152,234);
+        background: linear-gradient(180deg, rgba(177,152,234,1) 50%, rgba(133,94,223,1) 100%);
+        box-shadow: 0px 5px 10px 0 rgba(130, 90, 222, 0.45);
+    }
+
+    .icons-telegram {
+        margin-right: -0.5vw;
+        background: rgb(140,178,228);
+        background: linear-gradient(180deg, rgba(140,178,228,1) 50%, rgba(73,133,213,1) 100%);
+        box-shadow: 0px 5px 10px 0 rgba(76, 135, 214, 0.45);
+    }
+
+    &__icons-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1500;
+
+        &:hover {
+            .icons-item__label {
+                color: #fe5644;
+            }
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 57%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+
+        // @include responsive(mobile) {
+        //     top: 50%;
+        //     left: 50%;
+        // }
+
+        img {
+            width: 29.427vw;
+        }
+    }
+}
