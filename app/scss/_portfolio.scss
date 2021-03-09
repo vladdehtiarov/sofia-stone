@@ -1,0 +1,154 @@
+// portfolio styles
+.portfolio {
+    width: 100%;
+    height: auto;
+    padding-top: 4.583vw;
+    padding-bottom: 3.385vw;
+    position: relative;
+
+    .container {
+        max-width: 68.750vw;
+    }
+
+    &-book {
+        width: 48.646vw;
+        position: absolute;
+        top: 6.354vw;
+        left: 0;
+        z-index: -1;
+    }
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__title {
+        font-family: "Philosopher";
+        font-size: 1.563vw;
+        font-weight: bold;
+        line-height: 1.27;
+        text-align: left;
+        color: #333333;
+    }
+
+    &__subtitle {
+        font-size: 0.833vw;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: left;
+        color: #777777;
+    }
+
+    &__business {
+        .portfolio__title {
+            margin-left: 0.469vw;
+        }
+    }
+
+    &__business-client {
+        width: 34.375vw;
+    }
+
+    &__business-items,
+    &__client-items {
+        margin-top: 1.250vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__business-img,
+    &__client-img {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: inherit;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+    }
+
+    &__business-img {
+        width: 10.417vw;
+        height: 7.292vw;
+        border-radius: 1.302vw;
+    }
+
+    &__business-label {
+        margin-top: 0.260vw;
+        font-size: 0.833vw;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: center;
+        color: #777777;
+    }
+
+    &__client {
+        margin-top: 3.125vw;
+
+        .portfolio__title {
+            margin-left: 0.417vw;
+        }
+
+        .portfolio__subtitle {
+            margin-top: -0.208vw;
+            margin-left: 0.573vw;
+        }
+    }
+    
+    &__client-item {
+        width: 10.417vw;
+    }
+
+    &__client-item:first-child {
+        .portfolio__client-descr {
+            width: 9.271vw;
+        }
+    }
+
+    &__client-item:nth-child(2) {
+        .portfolio__client-descr {
+            width: 8.854vw;
+        }
+    }
+
+    &__client-item:last-child {
+        .portfolio__client-descr {
+            width: 8.438vw;
+        }
+    }
+
+    &__client-img {
+        width: 10.417vw;
+        height: 10.417vw;
+        border-radius: 2.344vw;
+    }
+
+    &__client-label {
+        margin-top: 0.313vw;
+        margin-left: 0.469vw;
+        font-size: 0.833vw;
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: left;
+        color: #333333;
+    }
+
+    &__client-descr {
+        margin-top: 0.208vw;
+        margin-left: 0.469vw;
+        font-size: 0.625vw;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: left;
+        color: #777777;
+    }
+}

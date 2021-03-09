@@ -29,7 +29,8 @@
 
     .slider-block {
         position: absolute;
-        right: 0.469vw;
+        // left: 52.448vw
+        right: 0;
         
     }
 
@@ -186,7 +187,7 @@
     }
 
     .icons-telegram {
-        margin-right: -0.5vw;
+        // margin-right: -0.5vw;
         background: rgb(140,178,228);
         background: linear-gradient(180deg, rgba(140,178,228,1) 50%, rgba(73,133,213,1) 100%);
         box-shadow: 0px 5px 10px 0 rgba(76, 135, 214, 0.45);
@@ -199,6 +200,10 @@
         align-items: center;
         z-index: 1500;
 
+        &:last-child {
+            margin-right: -0.260vw;
+        }
+
         &:hover {
             .icons-item__label {
                 color: #fe5644;
@@ -209,7 +214,7 @@
     &__image {
         position: absolute;
         top: 57%;
-        left: 53%;
+        left: 36.354vw;
         transform: translate(-50%, -50%);
         z-index: 1000;
 

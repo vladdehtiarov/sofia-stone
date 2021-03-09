@@ -67,3 +67,45 @@ $('.slider-block').slick({
                     <img src="../images/arrow.svg" alt="arrow">
                 </button>`,
 });
+
+$('.finished-goods__slider').slick({
+    centerMode: true,
+    centerPadding: '11.979vw',
+    slidesToShow: 1,
+    dots: true,
+    infinite: true,
+    prevArrow: `<button class="slider-btn prew-slide">
+                    <img src="../images/arrow.svg" alt="arrow">
+                </button>`,
+    nextArrow: `<button class="slider-btn next-slide">
+                    <img src="../images/arrow.svg" alt="arrow">
+                </button>` 
+});
+
+
+const sliderThumbs = document.querySelectorAll('.slider-thumbs');
+
+sliderThumbs.forEach(thumbs => {
+    thumbs.addEventListener('click', function() {
+        const smallImgWrapper = this.querySelector('.slider-thumbs__small-images');
+        const bigImage = this.querySelector('.big-img');
+        
+        smallImgWrapper.addEventListener('click', (e) => {
+            const smallImages = smallImgWrapper.querySelectorAll('.small-image');
+            const target = e.target;
+            const smallImage = target.closest('img');
+            const smallImageWrapp = target.closest('.small-image');
+
+            if(!smallImage) return;
+
+            bigImage.src = smallImage.src;
+
+            smallImages.forEach(img => {
+                img.classList.remove('small-image_active');
+            });
+
+            smallImageWrapp.classList.add('small-image_active');
+
+        });
+    });
+});
