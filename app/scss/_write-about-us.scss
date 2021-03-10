@@ -1,0 +1,136 @@
+// write-about-us styles
+.write-about-us {
+    width: 100%;
+    height: auto;
+    padding-top: 5.104vw;
+    padding-bottom: 4.635vw;
+    position: relative;
+
+    .container {
+        max-width: 68.229vw;
+    }
+
+    &__bg-img-card {
+        width: 22.448vw;
+        height: auto;
+        position: absolute;
+        top: 5.677vw;
+        left: 0;
+    }
+
+    &__bg-img-magazine {
+        width: 50.938vw;
+        height: auto;
+        position: absolute;
+        top: 7.083vw;
+        right: 0;
+    }
+
+    &__bloks {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__block {
+        width: 34.375vw;
+
+        &-title {
+            font-family: "Philosopher";
+            font-size: 1.563vw;
+            font-weight: bold;
+            line-height: 0.8;
+            text-align: left;
+            color: #333333;
+        }
+
+        &-subtitle {
+            margin-top: 0.104vw;
+            font-size: 0.833vw;
+            font-weight: 500;
+            line-height: 1.5;
+            text-align: left;
+            color: #777777;
+        }
+    }
+
+    &__cards {
+        width: 100%;
+        height: auto;
+        margin-top: 1.094vw;
+        margin-left: -0.260vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__card {
+        width: 10.417vw;
+        height: auto;
+        
+        &-img {
+            width: 10.417vw;
+            height: 7.292vw;
+            border-radius: 1.302vw;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &-title {
+            margin-top: 0.521vw;
+            margin-left: 0.521vw;
+            font-size: 0.833vw;
+            font-weight: 600;
+            line-height: 1.5;
+            text-align: left;
+            color: #333333
+        }
+
+        &-subtitle {
+            width: 9.688vw;
+            margin-left: 0.521vw;
+            font-size: 0.625vw;
+            font-weight: 500;
+            line-height: 1.5;
+            text-align: left;
+            color: #777777;
+
+            span {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__block:nth-child(2) {
+        width: 30vw;
+    }
+
+    &__block:last-child {
+        margin-top: 4.063vw;
+
+        .write-about-us__cards {
+            margin-top: 1.198vw;
+        }
+
+        .write-about-us__card {
+            &-img {
+                height: 10.417vw;
+                border-radius: 2.344vw;
+            }
+        }
+    }
+}

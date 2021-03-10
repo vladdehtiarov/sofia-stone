@@ -196,6 +196,31 @@
     
     
     <script src="https://unpkg.com/imask"></script>
-    <script src="js/main.min.js"></script>
+    <script>
+        const downloadpdfBtn = document.querySelectorAll('.download-pdf-btn');
+        const inputNumber = document.querySelectorAll('.input-number');
+
+        const maskOptions = {
+            mask: '+{7}(000)000-00-00'
+        };
+
+        inputNumber.forEach(input => {
+            const mask = IMask(input, maskOptions);
+        });
+
+
+        downloadpdfBtn.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+
+                inputNumber.forEach(input => {
+                    if (input.value.length === 16) {
+                        e.preventDefault();
+                        window.location.href="../documents/doc_1.docx";
+                    }
+                });
+
+            });
+        });
+    </script>
 </body>
 </html>

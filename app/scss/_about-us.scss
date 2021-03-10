@@ -1,136 +1,253 @@
 // about-us styles
 .about-us {
     width: 100%;
-    height: auto;
-    padding-top: 5.104vw;
-    padding-bottom: 4.635vw;
-    position: relative;
+    height: 39.583vw;
+    padding-top: 5.208vw;
+    padding-bottom: 4.167vw;
+    background-image: url(../images/about-us/about-us_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     .container {
-        max-width: 68.229vw;
+        max-width: 68.750vw;
+        position: relative;
     }
 
-    &__bg-img-card {
-        width: 22.448vw;
-        height: auto;
+    .founder {
+        width: 14.583vw;
         position: absolute;
-        top: 5.677vw;
-        left: 0;
+        top: 14.375vw;
+        left: 53.125vw;
+
+        &__subtitle {
+            width: 10.313vw;
+            padding-top: 0.781vw;
+            margin: 0 auto;
+            font-size: 0.625vw;
+            font-weight: 500;
+            text-align: center;
+            color: #888888;
+            background-color: #fff;
+            border-top-left-radius: 0.260vw;
+            border-top-right-radius: 0.260vw;
+        }
+
+        &__title {
+            width: 14.583vw;
+            padding: 0.521vw 0;
+            font-family: "Philosopher";
+            font-size: 1.458vw;
+            font-weight: bold;
+            line-height: 0.86;
+            letter-spacing: 1.12px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #333333;
+            background-color: #fff;
+            border-radius: 0.260vw;
+        }
     }
 
-    &__bg-img-magazine {
-        width: 50.938vw;
-        height: auto;
-        position: absolute;
-        top: 7.083vw;
-        right: 0;
+    &__title-block {
+        font-family: "Philosopher";
+        font-weight: bold;
+        text-align: left;
     }
 
-    &__bloks {
-        width: 100%;
+    &__title {
+        font-size: 2.500vw;
+        line-height: 1;
+        color: #333333;      
+    }
+
+    &__subtitle {
+        width: 32vw;
+        margin-top: 1.667vw;
+        font-size: 1.667vw;
+        font-style: italic;
+        line-height: 1.06;
+        color: #333333;      
+    }
+
+    &__quote-block {
+        width: 27vw;
         height: auto;
+        margin-top: 1.979vw;
+        margin-left: 3.177vw;
+        font-size: 0.938vw;
+        font-weight: 500;
+        line-height: 1.33;
+        text-align: left;
+        color: #777777;
+        position: relative;
+
+        span {
+            display: block;
+            font-weight: 700;
+            color: #333333;
+        }
+
+        img {
+            width: 5.417vw;
+            position: absolute;
+            top: -0.781vw;
+            left: -4.635vw;
+        }
+    }
+
+    &__phone-block {
+        width: 68.750vw;
+        margin: 0 auto;
+        margin-top: 2.552vw;
+        padding-left: 3.177vw;
+        padding-right: 2.083vw;
+        padding-bottom: 1.042vw;
+        padding-top: 1.042vw;
+        border-radius: 2.865vw;
+        box-shadow: 0px 0.938vw 2.443vw 0.214vw rgba(0, 0, 0, 0.14);
+        background-color: #ffffff;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: center;
     }
 
-    &__block {
-        width: 34.375vw;
+    .phone-block {
 
-        &-title {
+        &__section {
+            padding-top: 0.625vw;
+        }
+
+        &__section:first-child {
+            height: 8.333vw;
+            padding-right: 3.385vw;
+            border-right: 1px solid #cccccc;
+        }
+
+        &__section:nth-child(2) {
+            width: 26.979vw;
+            height: 8.333vw;
+            border-right: 1px solid #cccccc;
+            
+            .phone-block__text {
+                width: 100%;
+                text-align: center;
+                span {
+                    display: inline-block;
+                }
+            }
+
+            .catalog-download__form {
+                margin-top: 1.979vw;
+                margin-left: 2.604vw;
+            }
+        }
+
+        &__section:nth-child(3) {
+            height: 8.333vw;
+            padding-left: 2.083vw;
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 2.604vw;
+                border-radius: 50%;
+                box-shadow: 0px 0.260vw 0.521vw 0 rgba(66, 168, 103, 0.45);
+            }
+
+            .phone-block__text {
+                margin-top: 0.781vw;
+                width: 100%;
+                text-align: center;
+                span {
+                    display: inline-block;
+                }
+            }
+
+            .phone-block__phone {
+                font-size: 0.625vw;
+                line-height: 1;
+                letter-spacing: 0.013vw;
+                text-align: center;
+                color: #333333;
+                
+                span {
+                    margin-top: 0.469vw;
+                    display: block;
+                    font-family: "Philosopher";
+                    font-size: 1.042vw;
+                    line-height: 1;
+                    font-weight: bold;
+                    text-align: center;
+                    color: #333333;
+                }
+            }
+        }
+
+        &__title {
             font-family: "Philosopher";
-            font-size: 1.563vw;
+            font-size: 1.354vw;
             font-weight: bold;
-            line-height: 0.8;
+            line-height: 1.31;
             text-align: left;
             color: #333333;
         }
 
-        &-subtitle {
-            margin-top: 0.104vw;
+        &__text {
+            width: 18.5vw;
+            margin-top: 0.365vw;
             font-size: 0.833vw;
             font-weight: 500;
-            line-height: 1.5;
-            text-align: left;
-            color: #777777;
-        }
-    }
-
-    &__cards {
-        width: 100%;
-        height: auto;
-        margin-top: 1.094vw;
-        margin-left: -0.260vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    &__card {
-        width: 10.417vw;
-        height: auto;
-        
-        &-img {
-            width: 10.417vw;
-            height: 7.292vw;
-            border-radius: 1.302vw;
-            overflow: hidden;
-            position: relative;
-
-            img {
-                width: inherit;
-                height: inherit;
-                object-fit: cover;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
-
-        &-title {
-            margin-top: 0.521vw;
-            margin-left: 0.521vw;
-            font-size: 0.833vw;
-            font-weight: 600;
-            line-height: 1.5;
-            text-align: left;
-            color: #333333
-        }
-
-        &-subtitle {
-            width: 9.688vw;
-            margin-left: 0.521vw;
-            font-size: 0.625vw;
-            font-weight: 500;
-            line-height: 1.5;
+            line-height: 1.38;
             text-align: left;
             color: #777777;
 
             span {
-                text-transform: uppercase;
+                display: block;
+                font-weight: 700;
+                color: #333333;
             }
         }
     }
 
-    &__block:nth-child(2) {
-        width: 30vw;
-    }
+    .catalog-download__form {
 
-    &__block:last-child {
-        margin-top: 4.063vw;
+        .input-number {
+            width: 12.500vw;
+            height: 3.125vw;
+            padding: 0 1.563vw;
+            border-radius: 1.563vw;
+            border: solid 0.156vw #ebe8f0;
+            font-size: 1.042vw;
+            font-weight: 500;
+            line-height: 0.8;
+            text-align: left;
+            color: #7da4ff;
 
-        .about-us__cards {
-            margin-top: 1.198vw;
+            &::placeholder {
+                font-size: 1.042vw;
+                font-weight: 500;
+                line-height: 0.8;
+                text-align: left;
+                color: #7da4ff;
+            }
         }
 
-        .about-us__card {
-            &-img {
-                height: 10.417vw;
-                border-radius: 2.344vw;
-            }
+        .send-btn {
+            width: 8.333vw;
+            height: 3.125vw;
+            border-radius: 1.563vw;
+            border: none;
+            outline: none;
+            box-shadow: 0px 0.521vw 2.083vw 0 rgba(251, 88, 72, 0.45);
+            background-image: linear-gradient(to top, #ff8f6f, #fb5848);
+            font-family: "Montserrat";
+            font-size: 0.729vw;
+            font-weight: 600;
+            letter-spacing: 0.029vw;
+            text-align: center;
+            color: #ffffff;
+            cursor: pointer;
         }
     }
 }
