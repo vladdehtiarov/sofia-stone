@@ -45,7 +45,7 @@ function showVibrate(btn) {
     function hideVibrate() {
         btn.classList.remove('jello-horizontal');
     }
-    setTimeout(hideVibrate, 900);
+    setTimeout(hideVibrate, 500);
 }
 
 
@@ -59,6 +59,7 @@ $('.slider-block').slick({
     slidesToShow: 1,
     slidesToSckroll: 1,
     centerMode: true,
+    speed: 1200,
     variableWidth: true,
     prevArrow: `<button class="slider__btn prew-slide">
                     <img src="../images/arrow.svg" alt="arrow">
@@ -73,6 +74,7 @@ $('.finished-goods__slider').slick({
     centerPadding: '11.979vw',
     slidesToShow: 1,
     dots: true,
+    speed: 2000,
     infinite: true,
     prevArrow: `<button class="slider-btn prew-slide">
                     <img src="../images/arrow.svg" alt="arrow">

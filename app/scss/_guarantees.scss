@@ -1,0 +1,120 @@
+// guarantees styles
+
+.guarantees {
+    width: 100%;
+    height: 38.542vw;
+    padding-top: 4.271vw;
+    padding-bottom: 3.125vw;
+    position: relative;
+
+    .container {
+        max-width: 68.750vw;
+    }
+
+    .guarantees_bg {
+        width: 36.563vw;
+        height: 38.542vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    &__list {
+        width: 100%;
+        margin-top: 1.458vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__item {
+        width: 20.833vw;
+        height: 27.083vw;
+        padding-top: 3.438vw;
+        padding-right: 2.500vw;
+        padding-left: 2.604vw;
+        border-radius: 2.865vw;
+        box-shadow: inset 0 0 6.094vw 0 rgba(82, 104, 219, 0.23);
+        background-color: #e0f3ff;
+        position: relative;
+
+        &-title {
+            width: 15.625vw;
+            font-family: "Philosopher";
+            font-size: 1.146vw;
+            font-weight: bold;
+            line-height: 1.09;
+            text-align: left;
+            color: #333333;
+        }
+
+        &-text {
+            width: 15.729vw;
+            margin-top: 1.563vw;
+            font-size: 0.729vw;
+            line-height: 1.43;
+            text-align: left;
+            color: #333333;
+
+            span {
+                font-weight: 700
+            }
+        }
+    }
+
+    &__item:first-child {
+        img {
+            width: 15.365vw;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    &__item:nth-child(2) {
+        background-color: #fbfbfc;
+
+        .guarantees__item-text {
+            width: 15vw;
+        }
+        
+        img {
+            position: absolute;
+        }
+
+        img:first-child {
+            width: 11.458vw;
+            top: 13.073vw;
+            left: 10.938vw;
+        }
+
+        img:nth-child(2){
+            width: 19.063vw;
+            top: 18.594vw;
+            left: -7.813vw;
+            z-index: 1000;
+        }
+
+        img:nth-child(3) {
+            width: 4.583vw;
+            top: 18.594vw;
+            left: 1.719vw;
+        }
+    }
+
+    &__item:last-child {
+
+        .guarantees__item-text {
+            width: 15vw;
+        }
+
+        img {
+            width: 16.146vw;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
