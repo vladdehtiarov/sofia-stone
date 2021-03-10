@@ -1,0 +1,144 @@
+// scheme-work styles
+.scheme-work {
+    width: 100%;
+    height: auto;
+    padding-top: 4.375vw;
+    padding-bottom: 3.698vw;
+
+    .container {
+        max-width: 68.750vw;
+    }
+
+    &__steps {
+        margin-top: 3.125vw;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &__step-tex {
+        margin-top: 0.469vw;
+        margin-left: -0.625vw;
+        font-family: "Philosopher";
+        font-size: 1.042vw;
+        line-height: 1.2;
+        text-align: left;
+        color: #333333;
+    }
+
+    &__step {
+        position: relative;
+
+        .check-icon {
+            width: 2.083vw;
+            position: absolute;
+            top: 3.594vw;
+            left: -1.667vw;
+        }
+    }
+
+    &__step:first-child {
+        margin-left: 3.750vw;
+
+        .step-img {
+            width: 6.875vw;
+        }
+
+        .scheme-work__step-tex {
+            width: 12.292vw;
+        }
+    }
+
+    &__step:nth-child(2) {
+        margin-left: 5.469vw;
+
+        .step-img {
+            width: 8.750vw;
+        }
+
+        .scheme-work__step-tex {
+            width: 13.854vw;
+        }
+    }
+
+    &__step:nth-child(3) {
+        margin-left: 4.010vw;
+
+        .step-img {
+            width: 8.906vw;
+        }
+
+        .scheme-work__step-tex {
+            width: 14.427vw;
+        }
+    }
+
+    &__step:last-child {
+        margin-left: 3.385vw;
+
+        .step-img {
+            width: 8.750vw;
+        }
+
+        .scheme-work__step-tex {
+            width: 13vw;
+        }
+    }
+
+    &__phone-block {
+        width: 100%;
+        height: 9.375vw;
+        margin-top: 1.354vw;
+        padding-left: 3.646vw;
+        padding-right: 4.688vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 2.865vw;
+        box-shadow: 0px 0.938vw 2.443vw 0.214vw rgba(0, 0, 0, 0.14);
+        background-color: #ffffff;
+        position: relative;
+
+        img {
+            width: 5.208vw;
+            position: absolute;
+            right: 0.417vw;
+            bottom: 0.365vw;
+        }
+
+        .phone-block__text {
+            font-family: "Philosopher";
+            font-size: 1.458vw;
+            font-weight: bold;
+            line-height: 1.43;
+            text-align: left;
+            color: #333333;
+        }
+
+        .form {
+            position: relative;
+
+            .form-hint {
+                position: absolute;
+                font-size: 0.625vw;
+                font-weight: 500;
+                line-height: 1.33;
+                text-align: center;
+                color: #777777;
+
+                &-top {
+                    top: -1.198vw;
+                    left: 2.240vw;
+                }
+
+                &-bottom {
+                    left: 2.760vw;
+                    bottom: -1.198vw;
+                }
+            }
+        }
+
+    }
+}
