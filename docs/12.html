@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <section class="about-us" id="about-us">
+        <div class="container">
+            <div class="founder">
+                <div class="founder__subtitle">
+                    Основатель «SOFIA STONE»
+                </div>
+                <div class="founder__title">
+                    Вадим Саакян
+                </div>
+            </div>
+
+            <div class="about-us__title-block">
+                <div class="about-us__title">О нас</div>
+                <div class="about-us__subtitle">
+                    - Мы не скрываем свои лица<br>
+                    и не боимся брать ответственность
+                    за результат нашей работы
+                </div>
+            </div>
+            <div class="about-us__quote-block">
+                <img src="images/about-us/backticks.png" alt="backticks">
+                <span class="about-us__quote-title">Работая в сфере изделий из камня,</span>         
+                мы убедились, что только доверительные отношения 
+                и полное взаимодействие с заказчиком позволяют 
+                нам создавать столешницы именно в таком виде,<br>
+                в котором ее хочет получить клиент.
+            </div>
+
+            <div class="about-us__phone-block">
+                <div class="phone-block__section">
+                    <div class="phone-block__title">Только телефон, и мы в деле!</div>
+                    <div class="phone-block__text">
+                        <span>Все начинается с диалога...</span>
+                        Если Вас устроят сроки и стоимость
+                        изготовления столешницы, мы отправим
+                        к Вам замерщика уже на следущий день.
+                    </div>
+                </div>
+                <div class="phone-block__section">
+                    <div class="phone-block__text">
+                        Давайте попробуем — <span>это БЕСПЛАТНО</span>
+                    </div>
+                    <form class="catalog-download__form">
+                        <input class="form-elem input-number" type="text" placeholder="Введите номер" required>
+                        <button class="form-elem send-btn">я в деле</button>
+                    </form>
+                </div>
+                <div class="phone-block__section">
+                    <img src="images/phone-icon.svg" alt="phone-icon">
+                    <div class="phone-block__text">
+                        Или <span>позвоните нам:</span>
+                    </div>
+                    <div class="phone-block__phone">
+                        Звоните, мы работаем с 9:00 до 21:00
+                        <span>+7 (906) 705-9578</span>
+                    </div>
+                </div>
+
+
+                <div class="phone-block__section">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        const downloadpdfBtn = document.querySelectorAll('.download-pdf-btn');
+        const inputNumber = document.querySelectorAll('.input-number');
+
+        const maskOptions = {
+            mask: '+{7}(000)000-00-00'
+        };
+
+        inputNumber.forEach(input => {
+            const mask = IMask(input, maskOptions);
+        });
+
+
+        downloadpdfBtn.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+
+                inputNumber.forEach(input => {
+                    if (input.value.length === 16) {
+                        e.preventDefault();
+                        window.location.href="documents/doc_1.docx";
+                    }
+                });
+
+            });
+        });
+    </script>
+</body>
+</html>
