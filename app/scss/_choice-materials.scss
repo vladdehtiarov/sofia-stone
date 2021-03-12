@@ -1,0 +1,54 @@
+.choice-materials {
+    position: relative;
+
+    .bg-laptop {
+        width: 23.490vw;
+        position: absolute;
+        top: 5.990vw;
+        left: 0;
+    }
+
+    &__inner {
+        width: 68.750vw;
+        height: 25vw;
+        margin: 0 auto;
+        padding-top: 1.250vw;
+        padding-left: 3.854vw;
+        position: relative;
+    }
+
+    &__icon-wrapper {
+        width: 27.083vw;
+        margin-top: 1.354vw;
+        margin-left: 0.260vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__partners {
+        margin-top: 2.083vw;
+        width: 27.083vw;
+        padding: 0.990vw 0;
+        border-top: 0.052vw solid #cccccc;
+        border-bottom: 0.052vw solid #cccccc;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        &-item {
+            width: 8.333vw;
+            margin-top: 0.625vw;
+
+            &:first-child,
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-top: 0;
+            }
+        }
+    }
+}    

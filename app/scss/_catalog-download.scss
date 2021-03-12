@@ -142,14 +142,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            // padding: 0.781vw 1.979vw 0.885vw 2.031vw;
             box-shadow: 0px 0.521vw 1.042vw 0 rgba(255, 89, 38, 0.55);
             background-image: linear-gradient(to top, #ff8f6f, #fb5849);
-            font-family: 'Montserrat', sans-serif;
+            font-family: Montserrat;
             font-size: 0.729vw;
             font-weight: 600;
             letter-spacing: 0.029vw;
-            line-height: 1;
             text-align: left;
             text-transform: uppercase;
             color: #ffffff;
@@ -182,9 +180,10 @@
 
     .img-whatsapp {
         width: 2.604vw;
-        margin-right: 0.781vw;
-        box-shadow: 0px 0.260vw 0.521vw 0 rgba(66, 168, 103, 0.45);
+        height: 2.604vw;
         border-radius: 0.781vw;
+        margin-right: 0.781vw;
+        box-shadow: 0px 0.313vw 0.521vw 0 rgba(54, 163, 93, 0.45);
 
         @include responsive(mobile) {
             display: none;

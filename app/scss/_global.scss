@@ -38,10 +38,6 @@ p {
     max-width: 69.427vw;
     margin: 0 auto;
 
-    // @include responsive(1366px) {
-    //     max-width: 97.584vw
-    // }
-
     @include responsive(mobile) {
         max-width: 95%;
     }
@@ -57,12 +53,6 @@ p {
     background-color: #52ac62;
     transform: translateY(-0.104vw);
 
-    // @include responsive(1366px) {
-    //     width:  0.439vw;
-    //     height: 0.439vw;
-    //     transform: translateY(-0.146vw);
-    // }
-
     @include responsive(mobile) {
         width: 1vw;
         height: 1vw;
@@ -75,10 +65,6 @@ p {
     justify-content: space-between;
     align-items: center;
 
-    // @include responsive(1366px) {
-    //     margin-top: 0.732vw;
-    // }
-
 }
 
 .media__item {
@@ -89,38 +75,27 @@ p {
     height: 1.563vw;
     margin-left: 0.521vw;
     border-radius: 0.781vw;
-    font-size: 0.521vw;
-    line-height: 0.833vw;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    color: #ffffff;
 
-    // @include responsive(1366px) {
-    //     width: 5.124vw;
-    //     height: 2.196vw;
-    //     margin-left: 0.732vw;
-    //     border-radius: 1.098vw;
-    //     font-size: 0.732vw;
-    //     line-height: 1.171vw;
-    // }
+    svg {
+        width: 3.646vw;
+        height: 1.563vw;
+    }
 }
 
-.wa-media {
+.whatsapp-btn {
     margin-left: 0;
     box-shadow: 0px 5px 10px 0 rgba(66, 168, 103, 0.45);
     background: rgb(127,196,151);
     background: linear-gradient(180deg, rgba(127,196,151,1) 43%, rgba(71,171,106,1) 100%);
 }
 
-  
-
-.viber-media {
+.viber-btn {
     box-shadow: 0px 5px 10px 0 rgba(130, 90, 222, 0.45);
     background: rgb(173,147,233);
     background: linear-gradient(180deg, rgba(173,147,233,1) 43%, rgba(133,94,223,1) 100%);
 }
 
-.tg-media {
+.telegram-btn {
     box-shadow: 0px 5px 10px 0 rgba(76, 135, 214, 0.45);
     background: rgb(138,176,228);
     background: linear-gradient(180deg, rgba(138,176,228,1) 43%, rgba(73,133,213,1) 100%);

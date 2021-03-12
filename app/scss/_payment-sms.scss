@@ -8,11 +8,14 @@
     justify-content: space-between;
     position: relative;
 
-    // @include responsive(mobile) {
-    //     height: 84vw;
-    // }
+    .calculate-bg {
+        position: absolute;
+        width: 18.750vw;
+        top: 14.115vw;
+        left: 0;
+        z-index: 1000;
+    }
 
-    
     &__bg-img {
         width: 50vw;
         height: 39.583vw;

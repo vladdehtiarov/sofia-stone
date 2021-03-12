@@ -208,12 +208,14 @@
     
 
     &__sale {
+        display: flex;
+        align-items: center;
 
         @include responsive(mobile) {
             display: none;
         }
 
-        img {
+        svg {
             display: inline-block;
             width: 2.604vw;
             margin-right: 0.417vw;

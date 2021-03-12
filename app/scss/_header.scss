@@ -90,17 +90,13 @@
         justify-content: center;
         justify-content: center;
 
-        // @include responsive(1366px) {
-        //     margin-left: 5.124vw;
-        // }
-
         @include responsive(mobile) {
             display: none;
         }
 
         .info__text {
             display: inline-block;
-            text-align: center;
+            text-align: left;
         }
     }
 }
