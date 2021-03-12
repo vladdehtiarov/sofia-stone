@@ -14,99 +14,66 @@
 </head>
 <body>
 
-    <section class="about-us" id="about-us">
+    <section class="guarantees" id="guarantees">
+        <img class="guarantees_bg" src="images/guarantees/guarantees_bg.png" alt="guarantees_bg">
         <div class="container">
-            <div class="founder">
-                <div class="founder__subtitle">
-                    Основатель «SOFIA STONE»
-                </div>
-                <div class="founder__title">
-                    Вадим Саакян
-                </div>
-            </div>
+            <h2 class="section__title-title">Отвечаем за свою работу репутацией</h2>
+            <div class="guarantees__list">
+                <div class="guarantees__item">
+                    <img src="images/guarantees/paper.png" alt="paper">
+                    <div class="guarantees__item-title">
+                        Работаем строго по договору. 
+                        Даем официальную гарантию
+                        3 года на изделие и монтаж
+                    </div>
 
-            <div class="about-us__title-block">
-                <div class="about-us__title">О нас</div>
-                <div class="about-us__subtitle">
-                    - Мы не скрываем свои лица<br>
-                    и не боимся брать ответственность
-                    за результат нашей работы
-                </div>
-            </div>
-            <div class="about-us__quote-block">
-                <img src="images/about-us/backticks.png" alt="backticks">
-                <span class="about-us__quote-title">Работая в сфере изделий из камня,</span>         
-                мы убедились, что только доверительные отношения 
-                и полное взаимодействие с заказчиком позволяют 
-                нам создавать столешницы именно в таком виде,<br>
-                в котором ее хочет получить клиент.
-            </div>
-
-            <div class="about-us__phone-block">
-                <div class="phone-block__section">
-                    <div class="phone-block__title">Только телефон, и мы в деле!</div>
-                    <div class="phone-block__text">
-                        <span>Все начинается с диалога...</span>
-                        Если Вас устроят сроки и стоимость
-                        изготовления столешницы, мы отправим
-                        к Вам замерщика уже на следущий день.
-                    </div>
-                </div>
-                <div class="phone-block__section">
-                    <div class="phone-block__text">
-                        Давайте попробуем — <span>это БЕСПЛАТНО</span>
-                    </div>
-                    <form class="catalog-download__form">
-                        <input class="form-elem input-number" type="text" placeholder="Введите номер" required>
-                        <button class="form-elem send-btn">я в деле</button>
-                    </form>
-                </div>
-                <div class="phone-block__section">
-                    <img src="images/phone-icon.svg" alt="phone-icon">
-                    <div class="phone-block__text">
-                        Или <span>позвоните нам:</span>
-                    </div>
-                    <div class="phone-block__phone">
-                        Звоните, мы работаем с 9:00 до 21:00
-                        <span>+7 (906) 705-9578</span>
+                    <div class="guarantees__item-text">
+                        Заключаем прозрачный обоюдный
+                        договор, где прописываем все нюансы.
+                        Фиксируем стоимость работ в договоре
+                        <span>— Вы юридически защищены законом.</span>
                     </div>
                 </div>
 
+                <div class="guarantees__item">
+                    <img src="images/guarantees/grinder.png" alt="grinder">
+                    <img src="images/guarantees/money-bundle-blurry.png" alt="money-bundle-blurry">
+                    <img src="images/guarantees/bundle-money.png" alt="bundle-money">
+                    <div class="guarantees__item-title">
+                        Переделываем за свой счет
+                    </div>
 
-                <div class="phone-block__section">
+                    <div class="guarantees__item-text">
+                        В случае случайного повреждения
+                        материала нашими сотрудниками,
+                        мы берем на себя ответственость 
+                        за исправление. Поэтому в компании
+                        только <span>квалифицированные мастера
+                        с серьезным портфолио.</span>
+                    </div>
+                </div>
+
+                <div class="guarantees__item">
+                    <img src="images/guarantees/money.png" alt="money">
+                    <div class="guarantees__item-title">
+                        Не уложимся в сроки — 
+                        делаем скидку или дарим
+                        приятные подарки
+                    </div>
+
+                    <div class="guarantees__item-text">
+                        Мы полностью несем ответственность
+                        за соблюдение сроков выполнения
+                        всех видов работ. В случаю срыва мы
+                        <span>компенсируем убытки за свой счет.</span>
+                    </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
     
-    
-    <script src="https://unpkg.com/imask"></script>
-    <script>
-        const downloadpdfBtn = document.querySelectorAll('.download-pdf-btn');
-        const inputNumber = document.querySelectorAll('.input-number');
 
-        const maskOptions = {
-            mask: '+{7}(000)000-00-00'
-        };
-
-        inputNumber.forEach(input => {
-            const mask = IMask(input, maskOptions);
-        });
-
-
-        downloadpdfBtn.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-
-                inputNumber.forEach(input => {
-                    if (input.value.length === 16) {
-                        e.preventDefault();
-                        window.location.href="documents/doc_1.docx";
-                    }
-                });
-
-            });
-        });
-    </script>
 </body>
 </html>
