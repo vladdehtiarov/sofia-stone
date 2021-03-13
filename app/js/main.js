@@ -37,20 +37,23 @@ downloadpdfBtn.forEach(btn => {
     });
 });
 
-const activeBtn = document.querySelectorAll('.active-btn');
+const blick = document.querySelectorAll('.blick');
+const smallBlick = document.querySelectorAll('.small-blick');
 
 function showVibrate(btn) {
-    btn.classList.add('jello-horizontal');
-    
+    btn.classList.add('move');
+  
     function hideVibrate() {
-        btn.classList.remove('jello-horizontal');
+        btn.classList.remove('move');
     }
     setTimeout(hideVibrate, 500);
 }
 
+blick.forEach(btn => {
+    btn.addEventListener('click', () => showVibrate(btn));
+});
 
-
-activeBtn.forEach(btn => {
+smallBlick.forEach(btn => {
     btn.addEventListener('click', () => showVibrate(btn));
 });
 
