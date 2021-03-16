@@ -2,7 +2,7 @@
 
 .non-standard-tasks {
     width: 100%;
-    margin-top: 5.625vw;
+    margin-top: 8.125vw;
 
     @include responsive(mobile) {
         margin-top: 15vw;
@@ -19,6 +19,10 @@
     .section__title {
         &-subtitle {
             width: 41.927vw;
+            font-size: 1.146vw;
+            font-weight: 500;
+            line-height: 1.27;
+            color: #555555;
 
             @include responsive(mobile) {
                 width: 100%;

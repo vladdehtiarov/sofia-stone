@@ -3,7 +3,7 @@
     width: 60.417vw;
     height: 14.583vw;
     margin: 0 auto;
-    margin-top: 4.583vw;
+    margin-top: 6.927vw;
     border-radius: 2.865vw;
     box-shadow: 0px 0.938vw 2.443vw 0.214vw rgba(0, 0, 0, 0.14);
     position: relative;
@@ -226,3 +226,14 @@
     }
 }
 
+.download:last-child {
+    .catalog-download {
+        margin-top: 0;
+
+        &__title {
+            width: 100%;
+            margin-left: 1.146vw;
+        }
+    }
+
+}
