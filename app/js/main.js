@@ -14,13 +14,19 @@ menuClose.addEventListener('click', () => {
 
 const downloadpdfBtn = document.querySelectorAll('.download-pdf-btn');
 const inputNumber = document.querySelectorAll('.input-number');
+const inputNumb = document.querySelector('.input-number');
 
 const maskOptions = {
-    mask: '+{7}(000)000-00-00'
+    mask: '+{7}(000)000-00-00',
+    lazy: false,
 };
 
+
 inputNumber.forEach(input => {
-    const mask = IMask(input, maskOptions);
+    input.addEventListener('input', () => {
+        const mask = IMask(input, maskOptions);
+    });
+    input.value = '';
 });
 
 
@@ -62,7 +68,7 @@ $('.slider-block').slick({
     slidesToShow: 1,
     slidesToSckroll: 1,
     centerMode: true,
-    speed: 1200,
+    speed: 800,
     variableWidth: true,
     prevArrow: `<button class="slider__btn prew-slide">
                     <img src="../images/arrow.svg" alt="arrow">
@@ -77,7 +83,7 @@ $('.finished-goods__slider').slick({
     centerPadding: '11.979vw',
     slidesToShow: 1,
     dots: true,
-    speed: 2000,
+    speed: 1200,
     infinite: true,
     prevArrow: `<button class="slider-btn prew-slide">
                     <img src="../images/arrow.svg" alt="arrow">
@@ -88,29 +94,27 @@ $('.finished-goods__slider').slick({
 });
 
 
-const sliderThumbs = document.querySelectorAll('.slider-thumbs');
+const slide = document.querySelectorAll('.slide');
 
-sliderThumbs.forEach(thumbs => {
-    thumbs.addEventListener('click', function() {
-        const smallImgWrapper = this.querySelector('.slider-thumbs__small-images');
-        const bigImage = this.querySelector('.big-img');
+slide.forEach(slide => {
+    slide.addEventListener('click', function(e) {
+        const target = e.target;
+        const smalImg = target.closest('.small-image');
+        const bigImg = this.querySelector('.big-img');
+        const smallImages = this.querySelectorAll('.small-image');
         
-        smallImgWrapper.addEventListener('click', (e) => {
-            const smallImages = smallImgWrapper.querySelectorAll('.small-image');
-            const target = e.target;
-            const smallImage = target.closest('img');
-            const smallImageWrapp = target.closest('.small-image');
-
-            if(!smallImage) return;
-
-            bigImage.src = smallImage.src;
+        if(target.classList.value == 'small-img') {
+            bigImg.src = target.src;
 
             smallImages.forEach(img => {
                 img.classList.remove('small-image_active');
             });
 
-            smallImageWrapp.classList.add('small-image_active');
-
-        });
+            if(smalImg.classList.contains('small-image_active')) {
+                smalImg.classList.remove('small-image_active');
+            } else {
+                smalImg.classList.add('small-image_active');
+            }
+        }
     });
 });

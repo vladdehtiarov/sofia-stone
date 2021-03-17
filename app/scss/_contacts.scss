@@ -2,7 +2,7 @@
 .contacts {
     width: 100%;
     height: 37.500vw;
-    padding-top: 5.313vw;
+    padding-top: 4.948vw;
     padding-bottom: 5.208vw;
     background-image: url(../images/contacts/contacts_bg.png);
     background-size: cover;
@@ -18,7 +18,7 @@
     }
 
     &__subtitle {
-        margin-top: 1.510vw;
+        margin-top: 0.781vw;
         width: 36.5vw;
         font-family: "Philosopher";
         font-size: 2.188vw;
@@ -29,11 +29,10 @@
     }
 
     &__form {
-        margin-top: 2.604vw;
+        margin-top: 3.385vw;
         width: 42.708vw;
         height: 15.625vw;
-        padding-top: 1.458vw;
-        // padding-right: 2.969vw;
+        padding-top: 2.031vw;
         padding-bottom: 2.344vw;
         padding-left: 12.604vw;
         border-radius: 2.865vw;
@@ -45,7 +44,7 @@
             width: 15.833vw;
             position: absolute;
             left: 0;
-            bottom: 0;
+            bottom: 0.990vw;
         }
 
         &-subtex {
@@ -58,7 +57,7 @@
         }
 
         &-title {
-            margin-top: 1.875vw;
+            margin-top: 1.406vw;
             margin-left: 0.990vw;
             font-family: "Philosopher";
             font-size: 1.563vw;
@@ -90,11 +89,11 @@
     }
 
     .form {
-        margin-top: 2.240vw;
+        margin-top: 1.979vw;
 
         &-elem {
             height: 3.646vw;
-            border-radius: 1.823vw;
+            border-radius: 1.250vw;
         }
 
         .input-number {
@@ -129,7 +128,7 @@
         align-items: center;
         width: 20.833vw;
         height: 26.042vw;
-        padding-top: 3.021vw;
+        padding-top: 3.438vw;
         border-radius: 2.865vw;
         box-shadow: 0px 0.938vw 2.443vw 0.214vw rgba(0, 0, 0, 0.14);
         background-color: #ffffff;
@@ -177,7 +176,7 @@
             }
 
             &__item:last-child {
-                margin-top: 2.083vw;
+                margin-top: 1.458vw;
             }
 
             &__title {
@@ -231,38 +230,38 @@
 .whatsapp-icon {
     width: 5.208vw;
     height: 2.083vw;
-    border-radius: 1.042vw;
+    border-radius: 0.885vw;
     box-shadow: 0px 0.260vw 0.521vw 0 rgba(66, 168, 103, 0.45);
     overflow: hidden;
     svg {
         width: 5.208vw;
         height: auto;
-        border-radius: 1.042vw;
+        border-radius: 0.885vw;
     }
 }
 
 .viber-icon {
     width: 4.167vw;
     height: 2.083vw;
-    border-radius: 1.042vw;
+    border-radius: 0.885vw;
     box-shadow: 0px 0.260vw 0.521vw 0 rgba(130, 90, 222, 0.45);
     overflow: hidden;
     svg {
         width: 4.167vw;
         height: auto;
-        border-radius: 1.042vw;
+        border-radius: 0.885vw;
     }
 }
 
 .telegram-icon {
     width: 5.208vw;
     height: 2.083vw;
-    border-radius: 1.042vw;
+    border-radius: 0.885vw;
     box-shadow: 0px 0.260vw 0.521vw 0 rgba(76, 135, 214, 0.45);
     overflow: hidden;
     svg {
         width: 5.208vw;
         height: auto;
-        border-radius: 1.042vw;
+        border-radius: 0.885vw;
     }
 }

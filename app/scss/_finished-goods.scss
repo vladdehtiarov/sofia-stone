@@ -1,8 +1,8 @@
 // finished-goods styles
 .finished-goods {
     width: 100%;
-    padding-top: 4.323vw;
-    padding-bottom: 2.552vw;
+    padding-top: 4.115vw;
+    padding-bottom: 3.542vw;
 
     .section__title {
         &-subtitle {
@@ -19,50 +19,61 @@
     }
 
     &__product {
-        width: 20.833vw;
+        width: 100%;
         height: 100%;
-        border-left: 1px solid #cccccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .product {
 
+        &__label {
+            width: 100%;
+            padding: 1.719vw 0;
+            padding-left: 4.583vw;
+            margin-top: 2.135vw;
+            border-top: 0.052vw solid #cccccc;
+            border-bottom: 0.052vw solid #cccccc;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
         &__figure {
-            display: block;
-            width: 5.208vw;
-            height: 5.208vw;
-            margin: 0 auto;
-            margin-top: 3.177vw;
+            display: inline-block;
+            width: 3.750vw;
+            height: 3.750vw;
             border-radius: 0.521vw;
-            background-color: #f1f1f1;
+            background-color: #c4c4c4;;
             transform: rotate(45deg);
         }
 
         &__name {
-            margin-top: 2.917vw;
+            width: 12vw;
+            margin-left: 1.875vw;
             font-family: "Philosopher";
-            font-size: 1.354vw;
+            font-size: 1.146vw;
             font-weight: bold;
-            line-height: 1.08;
-            text-align: center;
+            line-height: 1.14;
+            text-align: left;
             color: #333333;
 
             span {
-                display: block;
-                margin-top: 0.156vw;
-                font-size: 1.563vw;
                 font-style: italic;
-                line-height: 1.13;
                 color: #6279db;
             }
         }
 
         &__pricelist {
-            margin-top: 3.125vw;
-            margin-left: 3.125vw;
+            margin-top: 1.719vw;
+            margin-left: -0.417vw;
 
             &-items {
-                margin-top: 1.406vw;
-                height: 4.167vw;
+                margin-top: 1.302vw;
+                height: 3.646vw;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
@@ -86,10 +97,6 @@
                 color: #333333;
             }
 
-            .product-total {
-                margin-top: 0.729vw;
-            }
-
             .pricelist-item {
                 &__name {
                     width: 8.854vw;
@@ -100,8 +107,7 @@
 
         &__button-wrapper {
             display: inline-block;
-            margin-top: 3.177vw;
-            margin-left: 2.552vw;
+            margin-top: 1.615vw;
 
             .prouct-btn {
                 display: flex;
@@ -109,7 +115,7 @@
                 justify-content: center;
                 width: 15.625vw;
                 height: 3.125vw;
-                border-radius: 1.563vw;
+                border-radius: 1.250vw;
                 box-shadow: 0px 0.521vw 2.083vw 0 rgba(251, 88, 72, 0.45);
                 background-image: linear-gradient(to bottom, #ff8f6f, #fb5848);
                 outline: none;
@@ -120,6 +126,8 @@
                 text-transform: uppercase;
                 color: #ffffff;
                 overflow: hidden;
+                position: relative;
+                
             }
         }
     }
@@ -157,11 +165,11 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        border-radius: 1.563vw;
+        border-radius: 1.250vw;
         border: none;
         outline: none;
         box-shadow: 0px 0.521vw 2.083vw 0 rgba(251, 88, 72, 0.45);
-        background-image: linear-gradient(to top, #ff8f6f, #fb5848);
+        background-image: linear-gradient(to bottom, #ff8f6f, #fb5848);
         cursor: pointer;
         transition: all .2s;
         position: absolute;
@@ -180,7 +188,7 @@
     }
 
     .next-slide {
-        right: 10.417vw;
+        right: 10vw;
         img {
             transform: rotate(-180deg);
             margin-left: auto;
@@ -189,7 +197,7 @@
     }
 
     .prew-slide {
-        left: 10.417vw;
+        left: 10vw;
     }
 
     .slick-dots {
@@ -243,7 +251,7 @@
         
 
         &__big-img {
-            width: 40.625vw;
+            width: 41.667vw;
             height: 37.500vw;
             box-shadow: inset 0 0 6.094vw 0 rgba(168, 162, 180, 0.3);
             border-top-left-radius: 2.865vw;
@@ -262,39 +270,47 @@
             }
         }
 
-        .small-image {
-            width: 5.208vw;
-            height: 5.208vw;
-            margin-top: 1.563vw;
-            border-radius: 1.563vw;
-            border: solid 0.156vw #dcdcdc;
-            background-color: #e8e8e8;
-            position: relative;
-            cursor: pointer;
+        
+    }
 
-            &:hover {
-                border: solid 0.156vw #fe5644;
-            }
+    .slider-thumbs__small-images {
+        margin-top: 5.208vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items:center
+    }
 
-            &:first-child {
-                margin-top: 0;
-            }
+    .small-image {
+        width: 5.208vw;
+        height: 5.208vw;
+        margin-left: 1.563vw;
+        border-radius: 1.563vw;
+        border: solid 0.156vw #dcdcdc;
+        background-color: #e8e8e8;
+        position: relative;
+        cursor: pointer;
 
-            img {
-                width: 4.167vw;
-                height: 4.167vw;
-                border-radius: 1.042vw;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
+        &:hover {
+            border: solid 0.156vw #fe5644;
         }
 
-        .small-image_active {
-            border: solid 0.156vw #fe5644;
+        &:first-child {
+            margin-left: 0;
+        }
+
+        img {
+            width: 4.167vw;
+            height: 4.167vw;
+            border-radius: 1.042vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 
+    .small-image_active {
+        border: solid 0.156vw #fe5644;
+    }
     
 }

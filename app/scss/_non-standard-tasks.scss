@@ -2,7 +2,7 @@
 
 .non-standard-tasks {
     width: 100%;
-    margin-top: 8.125vw;
+    margin-top: 7.031vw;
 
     @include responsive(mobile) {
         margin-top: 15vw;
@@ -31,9 +31,7 @@
     }
 
     .services-list {
-        margin-top: 1.667vw;
-
-        
+        margin-top: 2.656vw;
 
         &__img-wrapp {
             width: 17.708vw;
@@ -48,7 +46,7 @@
         }
     
         &__label {
-            margin-top: 0.313vw;
+            margin-top: 0.677vw;
             font-size: 0.938vw;
             font-weight: 500;
             line-height: 1.22;

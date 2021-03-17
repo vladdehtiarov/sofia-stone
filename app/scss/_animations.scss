@@ -17,6 +17,24 @@
     animation-timing-function: linear;
     
   }
+
+  &::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(#010101, 0.1);
+    transition: all 0.2s ease;
+  }
+
+  &:hover {
+      &::after {
+          background-color: rgba(#010101, 0);
+      }
+  }
 }
 
 .small-blick {
@@ -38,31 +56,49 @@
     animation-timing-function: linear;
     
   }
+
+  &::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(#010101, 0.1);
+    transition: all 0.2s ease;
+  }
+
+  &:hover {
+      &::after {
+          background-color: rgba(#010101, 0);
+      }
+  }
 }
 
-.move {
-  animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
+// .move {
+//   animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+// }
 
-@keyframes move {
-  from {
-    transform: translateY(0);
-  } to {
-    transform: translateY(5%s);
-  }
-}
+// @keyframes move {
+//   from {
+//     transform: translateY(0);
+//   } to {
+//     transform: translateY(5%s);
+//   }
+// }
 
-@keyframes slide-top {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(5%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
+// @keyframes slide-top {
+//   0% {
+//     transform: translateY(0);
+//   }
+//   50% {
+//     transform: translateY(5%);
+//   }
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
 
 @keyframes move-blick {
   from {
