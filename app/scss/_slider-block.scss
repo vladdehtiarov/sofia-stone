@@ -19,19 +19,35 @@
         }
     }
 
-    
 
-    .slider__btn {
-        width: 3.125vw;
-        height: 3.125vw;
-        border-radius: 1.250vw;
-        border: none;
-        outline: none;
-        box-shadow: 0px 0.521vw 2.083vw 0 rgba(251, 88, 72, 0.45);
-        background-image: linear-gradient(to bottom, #ff8f6f, #fb5848);
+    .slider-control {
         position: absolute;
-        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
         z-index: 1500;
+
+        &:hover .slider__btn {
+            width: 3.646vw;
+            height: 3.646vw;
+            background-image: linear-gradient(to bottom, #ff7c54, #fc4c39);
+            transition: all .2s ease;
+        }
+
+        .slider__btn {
+            width: 3.125vw;
+            height: 3.125vw;
+            border-radius: 1.250vw;
+            border: none;
+            outline: none;
+            box-shadow: 0px 0.521vw 2.083vw 0 rgba(251, 88, 72, 0.45);
+            background-image: linear-gradient(to bottom, #ff8f6f, #fb5849);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all .2s ease;
+            cursor: pointer;
+        }
 
         img {
             width: 0.729vw;
@@ -39,30 +55,19 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            cursor: pointer;
         }
     }
 
-    .prew-slide {
-        top: 50%;
-        left: -0.833vw;
-        transform: translate(-50%, -50%);
+    .btn-prew {
+        left: -1.458vw;
     }
 
-    .next-slide {
-        top: 50%;
-        left: 13.698vw;
-        transform: translate(-50%, -50%);
+    .btn-next {
+        left: 13.229vw;
 
         img {
             transform: translate(-50%, -50%) rotate(180deg);
         }
     }
-
-    .slider__btn:hover {
-        width: 3.646vw;
-        height: 3.646vw;
-
-        transition: all .2s ease-in-out;
-    }
-
 }

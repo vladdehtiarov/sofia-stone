@@ -11,8 +11,8 @@
     .calculate-bg {
         position: absolute;
         width: 18.750vw;
-        top: 14.115vw;
-        left: 0;
+        top: 13.854vw;
+        left: -0.521vw;
         z-index: 1000;
     }
 
@@ -24,15 +24,10 @@
         left: 0;
         z-index: -1;
 
-        // @include responsive(mobile) {
-        //     width: 100%;
-        //     height: 84vw;
-        // }
     }
 
     .slider-block {
         position: absolute;
-        // left: 52.448vw
         right: 0;
         
     }
@@ -47,26 +42,14 @@
         background-color: #fff;
         position: relative;
 
-        // @include responsive(mobile) {
-        //     width: 100%;
-        //     height: 62vw;
-        // }
     }
 
     .section__title {
         width: 27.083vw;
 
-        // @include responsive(mobile) {
-        //     width: 100%;
-        // }
-
         &-title {
             text-align: left;
             font-size: 2.500vw;;
-
-            // @include responsive(mobile) {
-            //     text-align: center;
-            // }
         }
     
         &-subtitle {
@@ -102,11 +85,6 @@
         text-align: left;
         color: #333333;
 
-        // @include responsive(mobile) {
-        //     width: 45.333vw;
-        //     font-size: 4.667vw;
-
-        // }
     }
 
     &__icons-list {
@@ -116,9 +94,6 @@
         align-items: center;
         justify-content: space-between;
 
-        // @include responsive(mobile) {
-        //     width: 37.333vw;
-        // }
     }
 
     .icons-item {
@@ -127,24 +102,6 @@
             height: 2.604vw;
             border-radius: 0.781vw;
             position: relative;
-
-            // @include responsive(mobile) {
-            //     width: 8.333vw;
-            //     height: 8.333vw;
-            //     border-radius: 2.500vw;
-            // }
-
-            img {
-                width: 1.563vw;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-
-                // @include responsive(mobile) {
-                //     width: 5vw;
-                // }
-            }
         }
 
         &__label {
@@ -156,32 +113,26 @@
             text-align: center;
             color: #333333;
 
-            // @include responsive(mobile) {
-            //     margin-top: 1.500vw;
-            //     font-size: 2vw;
-            //     letter-spacing: 0.080vw;
-            // }
         }
     }
 
-    .icons-whatsapp {
-        background: rgb(129,197,153);
-        background: linear-gradient(180deg, rgba(129,197,153,1) 50%, rgba(59,165,97,1) 100%);
-        box-shadow: 0px 0.260vw 0.521vw 0 rgba(66, 168, 103, 0.45);
-    }
+    // .icons-whatsapp {
+    //     background: rgb(129,197,153);
+    //     background: linear-gradient(180deg, rgba(129,197,153,1) 50%, rgba(59,165,97,1) 100%);
+    //     box-shadow: 0px 0.260vw 0.521vw 0 rgba(66, 168, 103, 0.45);
+    // }
 
-    .icons-viber {
-        background: rgb(177,152,234);
-        background: linear-gradient(180deg, rgba(177,152,234,1) 50%, rgba(133,94,223,1) 100%);
-        box-shadow: 0px 5px 10px 0 rgba(130, 90, 222, 0.45);
-    }
+    // .icons-viber {
+    //     background: rgb(177,152,234);
+    //     background: linear-gradient(180deg, rgba(177,152,234,1) 50%, rgba(133,94,223,1) 100%);
+    //     box-shadow: 0px 5px 10px 0 rgba(130, 90, 222, 0.45);
+    // }
 
-    .icons-telegram {
-        // margin-right: -0.5vw;
-        background: rgb(140,178,228);
-        background: linear-gradient(180deg, rgba(140,178,228,1) 50%, rgba(73,133,213,1) 100%);
-        box-shadow: 0px 5px 10px 0 rgba(76, 135, 214, 0.45);
-    }
+    // .icons-telegram {
+    //     background: rgb(140,178,228);
+    //     background: linear-gradient(180deg, rgba(140,178,228,1) 50%, rgba(73,133,213,1) 100%);
+    //     box-shadow: 0px 5px 10px 0 rgba(76, 135, 214, 0.45);
+    // }
 
     &__icons-item {
         display: flex;
@@ -208,13 +159,40 @@
         transform: translate(-50%, -50%);
         z-index: 1000;
 
-        // @include responsive(mobile) {
-        //     top: 50%;
-        //     left: 50%;
-        // }
-
         img {
             width: 29.427vw;
         }
     }
+}
+
+#payment-sms_calc {
+    .payment-sms__inner {
+        padding-top: 3.542vw;
+    }
+    .payment-sms__icon-wrapper {
+        margin-top: 2.188vw;
+        margin-left: 0.104vw;
+    }
+    .payment-sms__icons-list {
+        margin-top: 0.365vw;
+    }
+}
+
+.svg-wrapp {
+    width: 2.604vw;
+    height: 2.604vw;
+    border-radius: 0.990vw;
+    overflow: hidden;
+}
+
+.svg-w {
+    box-shadow: 0px 0.313vw 0.521vw 0 rgba(54, 163, 93, 0.45);
+}
+
+.svg-v {
+    box-shadow: 0px 0.313vw 0.521vw 0 rgba(126, 88, 213, 0.45);
+}
+
+.svg-t {
+    box-shadow: 0px 0.313vw 0.521vw 0 rgba(60, 127, 217, 0.45);
 }

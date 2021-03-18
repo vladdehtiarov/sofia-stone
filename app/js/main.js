@@ -10,24 +10,46 @@ menuClose.addEventListener('click', () => {
     headerMenu.classList.remove('show');
 });
 
+const btn = document.querySelectorAll('.blick');
+
+function blickAnim() {
+  btn.forEach(btn => {
+    btn.classList.add('blink-active');
+    
+    setTimeout(removeAnim, 1000);
+    
+    function removeAnim() {
+      btn.classList.remove('blink-active');
+    }
+  });  
+}
+
+setInterval(blickAnim, 3000);
 
 
 const downloadpdfBtn = document.querySelectorAll('.download-pdf-btn');
 const inputNumber = document.querySelectorAll('.input-number');
 const inputNumb = document.querySelector('.input-number');
 
-const maskOptions = {
-    mask: '+{7}(000)000-00-00',
-    lazy: false,
-};
-
-
-inputNumber.forEach(input => {
-    input.addEventListener('input', () => {
-        const mask = IMask(input, maskOptions);
-    });
-    input.value = '';
+$(function(){	 
+	$('.mask').mask('+7 (999) 999-99-99');
 });
+	
+$.fn.setCursorPosition = function(pos) {
+    if ($(this).get(0).setSelectionRange) {
+      $(this).get(0).setSelectionRange(pos, pos);
+    } else if ($(this).get(0).createTextRange) {
+      var range = $(this).get(0).createTextRange();
+      range.collapse(true);
+      range.moveEnd('character', pos);
+      range.moveStart('character', pos);
+      range.select();
+    }
+};
+$('.mask').click(function(){
+  $(this).setCursorPosition(4);  // set position number
+});
+
 
 
 downloadpdfBtn.forEach(btn => {
@@ -70,10 +92,12 @@ $('.slider-block').slick({
     centerMode: true,
     speed: 800,
     variableWidth: true,
-    prevArrow: `<button class="slider__btn prew-slide">
+    prevArrow: `<button class="slider-control btn-prew">
+                    <div class="slider__btn prew-slide"></div>
                     <img src="../images/arrow.svg" alt="arrow">
                 </button>`,
-    nextArrow: `<button class="slider__btn next-slide">
+    nextArrow: `<button class="slider-control btn-next">
+                    <div class="slider__btn next-slide"></div>
                     <img src="../images/arrow.svg" alt="arrow">
                 </button>`,
 });
@@ -85,12 +109,14 @@ $('.finished-goods__slider').slick({
     dots: true,
     speed: 1200,
     infinite: true,
-    prevArrow: `<button class="slider-btn prew-slide">
+    prevArrow: `<button class="slider-control btn-prew">
+                    <div class="slider__btn prew-slide"></div>
                     <img src="../images/arrow.svg" alt="arrow">
                 </button>`,
-    nextArrow: `<button class="slider-btn next-slide">
+    nextArrow: `<button class="slider-control btn-next">
+                    <div class="slider__btn next-slide"></div>
                     <img src="../images/arrow.svg" alt="arrow">
-                </button>` 
+                </button>`, 
 });
 
 

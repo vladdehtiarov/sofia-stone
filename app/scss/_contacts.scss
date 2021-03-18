@@ -57,8 +57,8 @@
         }
 
         &-title {
-            margin-top: 1.406vw;
-            margin-left: 0.990vw;
+            margin-top: 1.250vw;
+            margin-left: 0.938vw;
             font-family: "Philosopher";
             font-size: 1.563vw;
             font-weight: bold;
@@ -67,7 +67,7 @@
         }
 
         &-subtitle {
-            margin-top: 0.521vw;
+            margin-top: 0.677vw;
             margin-left: 2.656vw;
             display: flex;
             align-items: center;
@@ -89,11 +89,11 @@
     }
 
     .form {
-        margin-top: 1.979vw;
+        margin-top: 1.875vw;
 
         &-elem {
             height: 3.646vw;
-            border-radius: 1.250vw;
+            border-radius: 1.563vw;
         }
 
         .input-number {
@@ -102,7 +102,7 @@
         }
 
         .send-btn {
-            margin-left: 1.042vw;
+            margin-left: 0.781vw;
             width: 9.375vw;
             font-size: 0.833vw;
             font-weight: 600;
@@ -137,8 +137,9 @@
 
             &__item-mesengers {
                 width: 15.625vw;
-                margin-top: 0.469vw;
-                margin-bottom: 0.156vw;
+                margin-top: 0.573vw;
+                margin-bottom: 0.365vw;
+                margin-right: 0.104vw;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -168,7 +169,7 @@
             }
 
             &__item:nth-child(4) {
-                margin-top: 1.719vw;
+                margin-top: 1.510vw;
 
                 .adress-phones__item-phone {
                     margin-bottom: 0.260vw;
