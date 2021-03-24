@@ -8,12 +8,32 @@
     justify-content: space-between;
     position: relative;
 
+    @include responsive(mobile) {
+        padding-top: 14.808vw;
+        padding-bottom: 11.346vw;
+        height: auto;
+    }
+
+    .container {
+        @include responsive(mobile) {
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+        }
+    }
+
     .calculate-bg {
         position: absolute;
         width: 18.750vw;
         top: 13.854vw;
         left: -0.521vw;
         z-index: 1000;
+
+        @include responsive(mobile) {
+            width: 36.731vw;
+            top: auto;
+            bottom: 20.385vw;
+        }
     }
 
     &__bg-img {
@@ -24,11 +44,20 @@
         left: 0;
         z-index: -1;
 
+        @include responsive(mobile) {
+            display: none;
+        }
+
     }
 
     .slider-block {
         position: absolute;
         right: 0;
+
+        @include responsive(mobile) {
+            top: 59.038vw;
+            left: 0;
+        }
         
     }
 
@@ -42,14 +71,31 @@
         background-color: #fff;
         position: relative;
 
+        @include responsive(mobile) {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            padding-top: 0.192vw;
+            box-shadow: none;
+        }
+
     }
 
     .section__title {
         width: 27.083vw;
 
+        @include responsive(mobile) {
+            width: 100%;
+        }
+
         &-title {
             text-align: left;
             font-size: 2.500vw;;
+
+            @include responsive(mobile) {
+                text-align: center;
+                font-size: 7.115vw;
+            }
         }
     
         &-subtitle {
@@ -63,6 +109,15 @@
             line-height: 1.23;
             text-align: left;
 
+            @include responsive(mobile) {
+                width: 82.692vw;
+                margin: 0 auto;
+                margin-top: 2.692vw;
+                font-size: 4.231vw;
+                line-height: 1.18;
+                text-align: center;
+                border-bottom: none;
+            }
         }
     }
 
@@ -74,17 +129,32 @@
         align-items: center;
         justify-content: space-between;
 
+
+        @include responsive(mobile) {
+            width: 100%;
+            margin-top: 132.692vw;
+            padding-top: 4.231vw;
+            border-top: 0.192vw solid #cccccc;
+        }
     }
 
     &__icons-label {
         width: 14.271vw;
-        font-family: "Philosopher";
+        font-family: "Philosopher", sans-serif;
         font-size: 1.458vw;
         font-weight: bold;
         line-height: 1.07;
         text-align: left;
         color: #333333;
 
+        @include responsive(mobile) {
+            // width: 41.154vw;
+            width: 46.923vw;
+            margin-top: -1.731vw;
+            padding-left: 5.769vw;
+            font-size: 4.231vw;
+            line-height: 1.09;
+        }
     }
 
     &__icons-list {
@@ -94,6 +164,12 @@
         align-items: center;
         justify-content: space-between;
 
+        @include responsive(mobile) {
+            width: 42.692vw;
+            margin-top: 1.154vw;
+            margin-right: 7.115vw;
+        }
+
     }
 
     .icons-item {
@@ -102,6 +178,12 @@
             height: 2.604vw;
             border-radius: 0.781vw;
             position: relative;
+
+            @include responsive(mobile) {
+                width: 11.538vw;
+                height: 11.538vw;
+                border-radius: 4.423vw;
+            }
         }
 
         &__label {
@@ -113,26 +195,14 @@
             text-align: center;
             color: #333333;
 
+            @include responsive(mobile) {
+                margin-top: 1.346vw;
+                font-size: 2.308vw;
+                line-height: 1.33;
+                letter-spacing: 0.092vw;
+            }
         }
     }
-
-    // .icons-whatsapp {
-    //     background: rgb(129,197,153);
-    //     background: linear-gradient(180deg, rgba(129,197,153,1) 50%, rgba(59,165,97,1) 100%);
-    //     box-shadow: 0px 0.260vw 0.521vw 0 rgba(66, 168, 103, 0.45);
-    // }
-
-    // .icons-viber {
-    //     background: rgb(177,152,234);
-    //     background: linear-gradient(180deg, rgba(177,152,234,1) 50%, rgba(133,94,223,1) 100%);
-    //     box-shadow: 0px 5px 10px 0 rgba(130, 90, 222, 0.45);
-    // }
-
-    // .icons-telegram {
-    //     background: rgb(140,178,228);
-    //     background: linear-gradient(180deg, rgba(140,178,228,1) 50%, rgba(73,133,213,1) 100%);
-    //     box-shadow: 0px 5px 10px 0 rgba(76, 135, 214, 0.45);
-    // }
 
     &__icons-item {
         display: flex;
@@ -159,8 +229,17 @@
         transform: translate(-50%, -50%);
         z-index: 1000;
 
+        @include responsive(mobile) {
+            top: 95vw;
+            left: 24.038vw;
+        }
+
         img {
             width: 29.427vw;
+
+            @include responsive(mobile) {
+                width: 108.654vw;
+            }
         }
     }
 }
@@ -168,13 +247,29 @@
 #payment-sms_calc {
     .payment-sms__inner {
         padding-top: 3.542vw;
+
+        @include responsive(mobile) {
+            padding-top: 0.192vw;
+        }
     }
     .payment-sms__icon-wrapper {
         margin-top: 2.188vw;
         margin-left: 0.104vw;
+
+        @include responsive(mobile) {
+            width: 100%;
+            margin-top: 136.538vw;
+            padding-top: 8.654vw;
+            border-top: 0.192vw solid #cccccc;
+        }
     }
     .payment-sms__icons-list {
         margin-top: 0.365vw;
+
+        @include responsive(mobile) {
+            margin-right: 6.923vw;
+            margin-top: 0.769vw;
+        }
     }
 }
 
@@ -183,16 +278,34 @@
     height: 2.604vw;
     border-radius: 0.990vw;
     overflow: hidden;
+
+    @include responsive(mobile) {
+        width: 11.538vw;
+        height: 11.538vw;
+        border-radius: 4.423vw;
+    }
 }
 
 .svg-w {
     box-shadow: 0px 0.313vw 0.521vw 0 rgba(54, 163, 93, 0.45);
+
+    @include responsive(mobile) {
+        box-shadow: 0px 1.154vw 1.923vw 0 rgba(54, 163, 93, 0.45);
+    }
 }
 
 .svg-v {
     box-shadow: 0px 0.313vw 0.521vw 0 rgba(126, 88, 213, 0.45);
+
+    @include responsive(mobile) {
+        box-shadow: 0px 1.154vw 1.923vw 0 rgba(126, 88, 213, 0.45);
+    }
 }
 
 .svg-t {
     box-shadow: 0px 0.313vw 0.521vw 0 rgba(60, 127, 217, 0.45);
+
+    @include responsive(mobile) {
+        box-shadow: 0px 1.154vw 1.923vw 0 rgba(60, 127, 217, 0.45);
+    }
 }

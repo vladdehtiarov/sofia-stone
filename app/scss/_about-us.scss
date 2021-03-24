@@ -9,9 +9,25 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    @include responsive(mobile) {
+        height: auto;
+        padding-top: 15vw;
+        padding-bottom: 0;
+        background-position: -104.615vw 58.654vw;
+        background-size: 220.769vw;
+    }
+
     .container {
         max-width: 68.750vw;
         position: relative;
+
+        @include responsive(mobile) {
+            width: 100%;
+            max-width: 100%;
+            padding: 0 7.692vw;
+            padding-bottom: 11.346vw;
+            overflow: hidden;
+        }
     }
 
     .founder {
@@ -19,6 +35,12 @@
         position: absolute;
         top: 14.115vw;
         left: 52.969vw;
+
+        @include responsive(mobile) {
+            width: 53.846vw;
+            top: 90.577vw;
+            left: 30.769vw;
+        }
 
         &__subtitle {
             width: 10.313vw;
@@ -32,6 +54,15 @@
             border-top-left-radius: 0.260vw;
             border-top-right-radius: 0.260vw;
             position: relative;
+
+            @include responsive(mobile) {
+                width: 38.462vw;
+                margin-bottom: -0.192vw;
+                padding-top: 5vw;
+                border-top-left-radius: 0.962vw;
+                border-top-right-radius: 0.962vw;
+                font-size: 2.308vw;
+            }
 
             &::before {
                 content: ' Основатель «SOFIA STONE»';
@@ -57,6 +88,16 @@
             text-align: center;
             text-transform: uppercase;
             color: #333333;
+
+            @include responsive(mobile) {
+                width: 53.846vw;
+                padding: 2.308vw 0;
+                padding-top: 2.885vw;
+                border-radius: 0.962vw;
+                font-size: 4.231vw;
+                line-height: 1.09;
+                letter-spacing: 0.169vw;
+            }
         }
     }
 
@@ -69,7 +110,11 @@
     &__title {
         font-size: 2.500vw;
         line-height: 1;
-        color: #333333;      
+        color: #333333;
+        
+        @include responsive(mobile) {
+            font-size: 6.923vw;
+        }
     }
 
     &__subtitle {
@@ -80,7 +125,14 @@
         font-style: italic;
         line-height: 1.06;
         text-align: left;
-        color: #333333;    
+        color: #333333;  
+        
+        @include responsive(mobile) {
+            width: 76.923vw;
+            margin-top: 2.692vw;
+            font-size: 4.231vw;
+            line-height: 1.09;
+        }
     }
 
     &__quote-block {
@@ -95,6 +147,14 @@
         color: #777777;
         position: relative;
 
+        @include responsive(mobile) {
+            width: 76.923vw;
+            margin-top: 4.231vw;
+            margin-left: 0;
+            font-size: 2.692vw;
+            line-height: 1.6;
+        }
+
         span {
             display: block;
             font-weight: 700;
@@ -106,6 +166,10 @@
             position: absolute;
             top: -0.781vw;
             left: -4.635vw;
+
+            @include responsive(mobile) {
+                display: none;
+            }
         }
     }
 
@@ -124,12 +188,26 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+
+        @include responsive(mobile) {
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            margin-top: 61.538vw;
+            padding: 6.731vw 0 9.038vw 0;
+            border-radius: 10.577vw;
+            box-shadow: 0px 3.462vw 9.019vw 0.788vw rgba(0, 0, 0, 0.14);
+        }
     }
 
     .phone-block {
 
         &__section {
             padding-top: 0.625vw;
+
+            @include responsive(mobile) {
+                width: 100%;
+            }
         }
 
         &__section:first-child {
@@ -137,16 +215,41 @@
             padding-top: 0.833vw;
             padding-right: 3.385vw;
             border-right: 1px solid #cccccc;
+
+            @include responsive(mobile) {
+                height: auto;
+                padding: 0;
+                padding-bottom: 6.346vw;
+                border-right: none;
+                border-bottom: 0.192vw solid #cccccc;
+            }
         }
 
         &__section:nth-child(2) {
             width: 26.979vw;
             height: 8.333vw;
             border-right: 1px solid #cccccc;
+
+            @include responsive(mobile) {
+                width: 100%;
+                height: auto;
+                padding-top: 5.385vw;
+                padding-bottom: 6.346vw;
+                border-right: none;
+                border-bottom: 0.192vw solid #cccccc;
+            }
             
             .phone-block__text {
                 width: 100%;
                 text-align: center;
+
+                @include responsive(mobile) {
+                    margin-top: 0;
+                    margin-left: 0;
+                    padding-left: 0;
+                    font-size: 3.077vw;
+                }
+
                 span {
                     display: inline-block;
                 }
@@ -155,6 +258,14 @@
             .catalog-download__form {
                 margin-top: 1.979vw;
                 margin-left: 2.604vw;
+
+                @include responsive(mobile) {
+                    margin: 0;
+                    margin-top: 2.500vw;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
             }
         }
 
@@ -163,6 +274,14 @@
             padding-left: 2.083vw;
             padding-top: 0.260vw;
 
+            @include responsive(mobile) {
+                height: auto;
+                padding-top: 6.346vw;
+                padding-left: 0;
+                padding-right: 0;
+                position: relative;
+            }
+
             svg {
                 display: block;
                 margin: 0 auto;
@@ -170,12 +289,32 @@
                 height: 3.125vw;
                 border-radius: 1.198vw;
                 box-shadow: 0px 0.313vw 0.521vw 0 rgba(54, 163, 93, 0.45);
+
+                @include responsive(mobile) {
+                    width: 11.538vw;
+                    height: 11.538vw;
+                    border-radius: 4.423vw;
+                    box-shadow: 0px 1.154vw 1.923vw 0 rgba(54, 163, 93, 0.45);
+                    position: absolute;
+                    top: 7.500vw;
+                    left: 11.538vw;
+                }
             }
 
             .phone-block__text {
                 margin-top: 0.781vw;
                 width: 100%;
                 text-align: center;
+
+                @include responsive(mobile) {
+                    margin-top: 0;
+                    margin-left: 27.308vw;
+                    padding-left: 0;
+                    font-size: 3.077vw;
+                    text-align: left;
+                    line-height: 1.5;
+                }
+
                 span {
                     display: inline-block;
                 }
@@ -188,26 +327,47 @@
                 text-align: center;
                 color: #333333;
                 
+                @include responsive(mobile) {
+                    margin-top: 0.577vw;
+                    margin-left: 27.885vw;
+                    font-size: 2.308vw;
+                    text-align: left;
+                    letter-spacing: 0.046vw;
+                }
+
                 span {
                     margin-top: 0.469vw;
                     display: block;
-                    font-family: "Philosopher";
+                    font-family: "Philosopher", sans-serif;
                     font-size: 1.042vw;
                     line-height: 1;
                     font-weight: bold;
                     text-align: center;
                     color: #333333;
+
+                    @include responsive(mobile) {
+                        margin-top: 1.346vw;
+                        margin-left: -0.385vw;
+                        font-size: 3.846vw;
+                        text-align: left;
+                        letter-spacing: normal;
+                    }
                 }
             }
         }
 
         &__title {
-            font-family: "Philosopher";
+            font-family: "Philosopher", sans-serif;
             font-size: 1.354vw;
             font-weight: bold;
             line-height: 1.31;
             text-align: left;
             color: #333333;
+
+            @include responsive(mobile) {
+                padding: 0 7.692vw;
+                font-size: 5vw;
+            }
         }
 
         &__text {
@@ -218,6 +378,15 @@
             line-height: 1.38;
             text-align: left;
             color: #777777;
+
+            @include responsive(mobile) {
+                width: 67.308vw;
+                margin-top: 2.115vw;
+                margin-left: 0.577vw;
+                padding-left: 7.692vw;
+                font-size: 2.692vw;
+                line-height: 1.6;
+            }
 
             span {
                 display: block;
@@ -241,13 +410,30 @@
             text-align: left;
             color: #7da4ff;
 
+            @include responsive(mobile) {
+                width: 42.308vw;
+                height: 11.538vw;
+                margin-right: 1.923vw;
+                padding: 0 5vw;
+                border-radius: 4.808vw;
+                border: solid 0.577vw #ebe8f0;
+                font-size: 3.846vw;
+                line-height: 1;
+            }
+
             &::placeholder {
                 font-size: 1.042vw;
                 font-weight: 500;
                 line-height: 0.8;
                 text-align: left;
                 color: #7da4ff;
+
+                @include responsive(mobile) {
+                    font-size: 3.846vw;
+                    line-height: 1;
+                }
             }
+
         }
 
         .send-btn {
@@ -266,6 +452,16 @@
             color: #ffffff;
             cursor: pointer;
             overflow: hidden;
+
+            @include responsive(mobile) {
+                width: 25vw;
+                height: 11.538vw;
+                border-radius: 4.808vw;
+                box-shadow: 0px 1.923vw 7.692vw 0 rgba(251, 88, 72, 0.45);
+                font-size: 2.692vw;
+                letter-spacing: 0.108vw;
+                text-transform: uppercase;
+            }
 
             &:hover {
                 background-image: linear-gradient(to bottom, #ff7c54, #fc4c39);

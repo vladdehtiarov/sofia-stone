@@ -7,9 +7,9 @@
     align-items: center;
 
     @include responsive(mobile) {
-        margin-top: 7.321vw;
+        margin-top: 53.846vw;
         flex-direction: column;
-        
+        padding-bottom: 11.538vw;
     }
 
 
@@ -22,64 +22,60 @@
         background-color: #ffffff;
         color: #333333;
         position: relative;
-        
-
-        // @include responsive(1366px) {
-        //     width: 29.283vw;
-        //     height: 16.105vw;
-        //     padding: 2.928vw 0 2.489vw 2.928vw;
-        //     border-radius: 45px;
-        //     box-shadow: 0px 1.318vw 3.441vw 0.293vw rgba(0, 0, 0, 0.14);
-        // }
 
         @include responsive(mobile) {
-            width: 80vw;
-            height: 40vw;
-            padding: 6.667vw;
-            border-radius: 7.667vw;
-            margin-top: 6.667vw;
+            width: 80.769vw;
+            height: 42.308vw;
+            margin-top: 7.692vw;
+            margin-right: 0.577vw;
+            padding: 9.038vw 0 0 7.692vw;
+            border-radius: 8.654vw;
+            box-shadow: 0px 3.462vw 9.019vw 0.788vw rgba(0, 0, 0, 0.14);
+        }
+
+        &:first-child {
+            @include responsive(mobile) {
+                margin-top: 0;
+            }
         }
     }
 
     &__item:last-child {
         margin-right: 0.260vw;
+        @include responsive(mobile) {
+            padding-top: 7.115vw;
+            margin-right: 0.577vw;
+        }
     }
 
 
     &__title {
-        // width: 11.198vw;
         font-family: "Philosopher";
         font-size: 1.354vw;
         font-weight: 700;
         line-height: 0.94;
 
-        // @include responsive(1366px) {
-        //     // width: 15.739vw;
-        //     font-size: 1.903vw;
-        // }
-
         @include responsive(mobile) {
-            font-size: 4.5vw;
+            font-size: 5vw;
+            font-weight: 700;
+            line-height: 0.94;
+            text-align: left;
+            color: #333333;
         }
     }
 
     &__text {
-        // width: 10.417vw;
         margin-top: 0.938vw;
         font-size: 0.729vw;
         font-weight: 400;
         line-height: 1.43;
 
-        // @include responsive(1366px) {
-        //     // width: 14.641vw;
-        //     margin-top: 1.537vw;
-        //     font-size: 1.025vw;
-        // }
-
         @include responsive(mobile) {
-            margin-top: 3.500vw;
-            font-size: 2.5vw;
-            line-height: 3.333vw;
+            margin-top: 3.654vw;
+            font-size: 2.692vw;
+            line-height: 1.43;
+            text-align: left;
+            color: #333333;
         }
 
         span {
@@ -97,14 +93,9 @@
         left: 50%;
         transform: translateX(-50%);
 
-        // @include responsive(1366px) {
-        //     width: 2.928vw;
-        //     top: -1.464vw;
-        // }
-
         @include responsive(mobile) {
-            width: 6.667vw;
-            top: -3.333vw;
+            width: 7.692vw;
+            top: -3.846vw;
         }
     }
 
@@ -117,25 +108,19 @@
 
     .img-present {
         width: 7.344vw;
-        
-        // @include responsive(1366px) {
-        //     width: 10.322vw;
-        // }
 
         @include responsive(mobile) {
-            width: 23.500vw;
+            top: 21.731vw;
+            width: 26.923vw;
         }
     }
 
     .img-tile {
         width: 8.594vw;
 
-        // @include responsive(1366px) {
-        //     width: 12.079vw;
-        // }
-
         @include responsive(mobile) {
-            width: 27.500vw;
+            top: 23.654vw;
+            width: 32.308vw;
         }
     }
 
@@ -145,13 +130,10 @@
         left: 50%;
         transform: translate(25%, -50%);
 
-        // @include responsive(1366px) {
-        //     width: 18.302vw;
-        // }
-
         @include responsive(mobile) {
-            width: 41.667vw;
-            transform: translate(15%, -50%);
+            width: 47.115vw;
+            top: 21.154vw;
+            left: 41.154vw;
         }
     }
 }

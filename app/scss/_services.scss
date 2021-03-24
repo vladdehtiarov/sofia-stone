@@ -6,15 +6,14 @@
 
     @include responsive(mobile) {
         padding-top: 10vw;
-        margin-top: 3.167vw;
-        border-top: 0.333vw solid #cfccd7;
+        margin-top: 0;
     }
 
     .container {
         max-width: 68.750vw;
 
         @include responsive(mobile) {
-            max-width: 95%;
+            max-width: 81.538vw;
         }
     }
 }
@@ -22,7 +21,7 @@
 .section__title {
 
     &-title {
-        font-family: "Philosopher";
+        font-family: "Philosopher", sans-serif;
         font-size: 2.500vw;
         font-weight: bold;
         line-height: 1;
@@ -30,7 +29,8 @@
         color: #333333;
 
         @include responsive(mobile) {
-            font-size: 8vw;
+            font-size: 6.154vw;
+            font-weight: 700;
         }
     }
 
@@ -63,6 +63,7 @@
 
     @include responsive(mobile) {
         flex-direction: column;
+        margin-top: 8.654vw;
     }
 
     
@@ -72,8 +73,9 @@
         margin-top: 1.979vw;
 
         @include responsive(mobile) {
-            margin-top: 8.333vw;
+            margin-top: 48px;
         }
+
     }
 
 
@@ -83,7 +85,13 @@
         margin-top: 0;
 
         @include responsive(mobile) {
-            margin-top: 8.333vw;
+            margin-top: 9.231vw;
+        }
+    }
+
+    &__item:first-child {
+        @include responsive(mobile) {
+            margin-top: 0;
         }
     }
 
@@ -96,9 +104,9 @@
         overflow: hidden;
 
         @include responsive(mobile) {
-            width: 66.667vw;
-            height: 46.667vw;
-            border-radius: 8.333vw;
+            width: 76.923vw;
+            height: 53.462vw;
+            border-radius: 9.615vw;
         }
 
         .ok-img {
@@ -109,9 +117,9 @@
             z-index: 50;
 
             @include responsive(mobile) {
-                width: 6.667vw;
-                top: 5vw;
-                right: 5vw;
+                width: 7.692vw;
+                top: 5.577vw;
+                right: 5.769vw;
             }
         }
     }
@@ -136,8 +144,8 @@
         color: #555555;
 
         @include responsive(mobile) {
-            margin-top: 11px;
-            font-size: 3vw;
+            margin-top: 2.500vw;
+            font-size: 3.462vw;
         }
     }
 }

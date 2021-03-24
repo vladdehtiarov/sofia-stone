@@ -8,6 +8,11 @@
 
     .container {
         max-width: 68.229vw;
+
+        @include responsive(mobile) {
+            width: 100%;
+            max-width: 100%;
+        }
     }
 
     &__bg-img-card {
@@ -16,6 +21,10 @@
         position: absolute;
         top: 5.677vw;
         left: 0;
+
+        @include responsive(mobile) {
+            display: none;
+        }
     }
 
     &__bg-img-magazine {
@@ -24,6 +33,13 @@
         position: absolute;
         top: 6.406vw;
         right: 0;
+
+        @include responsive(mobile) {
+            width: 522px;
+            top: auto;
+            right: 0;
+            bottom: 30px;
+        }
     }
 
     &__bloks {
@@ -34,27 +50,66 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
+
+        @include responsive(mobile) {
+            flex-direction: column;
+        }
     }
 
     &__block {
         width: 34.375vw;
 
+        @include responsive(mobile) {
+            width: 100%;
+            padding-top: 58px;
+        }
+
+        &:first-child {
+            @include responsive(mobile) {
+                order: 1;
+            }
+        }
+
+        &:nth-child(2) {
+            @include responsive(mobile) {
+                order: 3;
+            }
+        }
+
+        &:last-child {
+            @include responsive(mobile) {
+                order: 2;
+            }
+        }
+
         &-title {
-            font-family: "Philosopher";
+            font-family: "Philosopher", sans-serif;
             font-size: 1.563vw;
             font-weight: bold;
             line-height: 0.8;
             text-align: left;
             color: #333333;
+
+            @include responsive(mobile) {
+                padding-left: 40px;
+                font-size: 26px;
+                line-height: 0.92;
+            }
         }
 
         &-subtitle {
+            padding-left: 40px;
             margin-top: 0.104vw;
             font-size: 0.833vw;
             font-weight: 500;
             line-height: 1.5;
             text-align: left;
             color: #777777;
+
+            @include responsive(mobile) {
+                margin-top: 6px;
+                font-size: 16px;
+            }
             
             span {
                 text-transform: uppercase;
@@ -70,11 +125,25 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+
+        @include responsive(mobile) {
+            width: 100%;
+            margin-top: 12px;
+            padding: 0 20px;
+            padding-bottom: 20px;
+            overflow: hidden;
+            overflow-x: scroll;
+        }
     }
 
     &__card {
         width: 10.417vw;
         height: auto;
+
+        @include responsive(mobile) {
+            width: 200px;
+            margin-left: 20px;
+        }
         
         &-img {
             width: 10.417vw;
@@ -82,6 +151,12 @@
             border-radius: 1.302vw;
             overflow: hidden;
             position: relative;
+
+            @include responsive(mobile) {
+                width: 200px;
+                height: 140px;
+                border-radius: 25px;
+            }
 
             img {
                 width: inherit;
@@ -101,7 +176,13 @@
             font-weight: 600;
             line-height: 1.5;
             text-align: left;
-            color: #333333
+            color: #333333;
+
+            @include responsive(mobile) {
+                margin-top: 8px;
+                margin-left: 10px;
+                font-size: 16px;
+            }
         }
 
         &-subtitle {
@@ -113,6 +194,12 @@
             text-align: left;
             color: #777777;
 
+            @include responsive(mobile) {
+                width: 173px;
+                margin-left: 10px;
+                font-size: 12px;
+            }
+
             span {
                 text-transform: uppercase;
             }
@@ -121,19 +208,52 @@
 
     &__block:nth-child(2) {
         width: 30vw;
+
+        @include responsive(mobile) {
+            width: 100%;
+            margin-top: 17px;
+            padding-bottom: 377px;
+        }
+
+        .write-about-us__block-subtitle {
+            @include responsive(mobile) {
+                margin-top: 2px;
+            }
+        }
     }
 
     &__block:last-child {
         margin-top: 4.063vw;
 
+        @include responsive(mobile) {
+            margin-top: 7px;
+        }
+
+        .write-about-us__block-subtitle {
+            @include responsive(mobile) {
+                margin-top: 4px;
+                margin-left: 2px;
+            }
+        }
+
+
         .write-about-us__cards {
             margin-top: 1.198vw;
+
+            @include responsive(mobile) {
+                margin-top: 14px;
+            }
         }
 
         .write-about-us__card {
             &-img {
                 height: 10.417vw;
                 border-radius: 2.344vw;
+
+                @include responsive(mobile) {
+                    height: 200px;
+                    border-radius: 45px;
+                }
             }
         }
     }

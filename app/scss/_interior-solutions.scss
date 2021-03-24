@@ -3,7 +3,7 @@
     margin-top: 5.573vw;
 
     @include responsive(mobile) {
-        margin-top: 15vw;
+        margin-top: 16.731vw;
     }
 
     .container {
@@ -27,20 +27,40 @@
     .services-list {
         margin-top: 2.292vw;
 
+        @include responsive(mobile) {
+            margin-top: 8.654vw;
+        }
+
+        &__item {
+            @include responsive(mobile) {
+                margin-top: 8.846vw;
+            }
+
+            &:first-child {
+                @include responsive(mobile) {
+                    margin-top: 0;
+                }
+            }
+        }
+
         &__img-wrapp {
             width: 20.833vw;
             height: 17.708vw;
             border-radius: 2.604vw;
 
             @include responsive(mobile) {
-                width: 66.667vw;
-                height: 56.667vw;
-                border-radius: 8.333vw;
+                width: 76.731vw;
+                height: 65.192vw;
+                border-radius: 9.615vw;
             }
         }
     
         &__label {
             margin-top: 0.729vw;
+
+            @include responsive(mobile) {
+                margin-top: 2.692vw;
+            }
         }
     }
 }

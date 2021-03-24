@@ -5,7 +5,7 @@
     margin-top: 7.031vw;
 
     @include responsive(mobile) {
-        margin-top: 15vw;
+        margin-top: 19.615vw;
     }
 
     .container {
@@ -25,7 +25,19 @@
             color: #555555;
 
             @include responsive(mobile) {
-                width: 100%;
+                margin-top: 0;
+                width: 81.538vw;
+                font-size: 4.231vw;
+                line-height: 1.27;
+                text-align: center;
+            }
+
+            span {
+                display: none;
+
+                @include responsive(mobile) {
+                    display: inline;
+                }
             }
         }
     }
@@ -33,15 +45,19 @@
     .services-list {
         margin-top: 2.656vw;
 
+        @include responsive(mobile) {
+            margin-top: 5.577vw;
+        }
+
         &__img-wrapp {
             width: 17.708vw;
             height: 12.500vw;
             border-radius: 2.604vw;
 
             @include responsive(mobile) {
-                width: 56.667vw;
-                height: 40vw;
-                border-radius: 8.333vw;
+                width: 65.385vw;
+                height: 46.154vw;
+                border-radius: 9.615vw;
             }
         }
     
@@ -54,8 +70,8 @@
             color: #555555;
 
             @include responsive(mobile) {
-                margin-top: 1.500vw;
-                font-size: 3vw;
+                margin-top: 2.115vw;
+                font-size: 3.462vw;
             }
         }
     }

@@ -9,23 +9,42 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    @include responsive(mobile) {
+        height: auto;
+        padding-top: 13.269vw;
+        padding-bottom: 11.538vw;
+    }
+
     .container {
         max-width: 68.750vw;
     }
 
     .section__title-title {
         text-align: left;
+
+        @include responsive(mobile) {
+            font-size: 9.231vw;
+            text-align: center;
+        }
     }
 
     &__subtitle {
         margin-top: 0.781vw;
         width: 36.5vw;
-        font-family: "Philosopher";
+        font-family: "Philosopher", sans-serif;
         font-size: 2.188vw;
         font-style: italic;
         line-height: 1.1;
         text-align: left;
         color: #333333;
+
+        @include responsive(mobile) {
+            width: 83.077vw;
+            margin-top: 3.269vw;
+            font-size: 5vw;
+            text-align: center;
+            line-height: 1.23;
+        }
     }
 
     &__form {
@@ -39,6 +58,10 @@
         box-shadow: 0px 0.938vw 2.443vw 0.214vw rgba(0, 0, 0, 0.14);
         background-color: #ffffff;
         position: relative;
+
+        @include responsive(mobile) {
+            display: none;
+        }
 
         img {
             width: 15.833vw;
@@ -120,6 +143,11 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
+
+        @include responsive(mobile) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__adress-phones {
@@ -133,6 +161,15 @@
         box-shadow: 0px 0.938vw 2.443vw 0.214vw rgba(0, 0, 0, 0.14);
         background-color: #ffffff;
 
+        @include responsive(mobile) {
+            margin-top: 8.462vw;
+            width: 76.923vw;
+            height: 96.154vw;
+            padding-top: 9.038vw;
+            border-radius: 9.615vw;
+            box-shadow: 0px 3.462vw 9.019vw 0.788vw rgba(0, 0, 0, 0.14);
+        }
+
         .adress-phones {
 
             &__item-mesengers {
@@ -144,6 +181,12 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+
+                @include responsive(mobile) {
+                    width: 108%;
+                    margin-top: 1.731vw;
+                    margin-bottom: 1.346vw;
+                }
             }
 
             &__item {
@@ -155,6 +198,10 @@
             &__item:nth-child(2) {
                 margin-top: 2.135vw;
 
+                @include responsive(mobile) {
+                    margin-top: 8.269vw;
+                }
+
                 .adress-phones__item-text {
                     margin-top: 0.104vw;
                 }
@@ -163,30 +210,54 @@
             &__item:nth-child(3) {
                 margin-top: 1.823vw;
 
+                @include responsive(mobile) {
+                    margin-top: 6.731vw;
+                }
+
                 .adress-phones__item-text {
                     margin-top: 0.104vw;
+
+                    @include responsive(mobile) {
+                        margin-top: 0.577vw;
+                    }
                 }
             }
 
             &__item:nth-child(4) {
                 margin-top: 1.510vw;
 
+                @include responsive(mobile) {
+                    margin-top: 6.154vw;
+                }
+
                 .adress-phones__item-phone {
                     margin-bottom: 0.260vw;
+
+                    @include responsive(mobile) {
+                        margin-bottom: 0.385vw;
+                    }
                 }
             }
 
             &__item:last-child {
                 margin-top: 1.458vw;
+
+                @include responsive(mobile) {
+                    margin-top: 8.077vw;
+                }
             }
 
             &__title {
-                font-family: "Philosopher";
+                font-family: "Philosopher", sans-serif;
                 font-size: 1.563vw;
                 font-weight: bold;
                 line-height: 1.13;
                 text-align: center;
                 color: #333333;
+
+                @include responsive(mobile) {
+                    font-size: 5.769vw;
+                }
             }
 
             &__item-subtext {
@@ -200,13 +271,25 @@
                 flex-direction: row;
                 align-items: center;
 
+                @include responsive(mobile) {
+                    font-size: 2.308vw;
+                    margin-left: -2.308vw;
+                    letter-spacing: 0.046vw;
+                }
+
                 span {
                     margin-right: 0.104vw;
                     display: inline-block;
                     width: 0.313vw;
                     height: 0.313vw;
                     border-radius: 50%;
-                    background-color: #52ac62;;
+                    background-color: #52ac62;
+
+                    @include responsive(mobile) {
+                        margin-right: 0.385vw;
+                        width: 1.154vw;
+                        height: 1.154vw;
+                    }
                 }
             }
 
@@ -215,14 +298,25 @@
                 font-weight: 600;
                 text-align: center;
                 color: #333333;
+
+                @include responsive(mobile) {
+                    margin-top: 1.154vw;
+                    letter-spacing: normal;
+                    font-size: 2.692vw;
+                }
             }
 
             &__item-phone {
-                font-family: "Philosopher";
+                font-family: "Philosopher", sans-serif;
                 font-size: 1.146vw;
                 font-weight: bold;
                 text-align: left;
                 color: #333333;
+
+                @include responsive(mobile) {
+                    margin-top: 0.385vw;
+                    font-size: 4.231vw;
+                }
             }
         }
     }
@@ -234,10 +328,23 @@
     border-radius: 0.885vw;
     box-shadow: 0px 0.260vw 0.521vw 0 rgba(66, 168, 103, 0.45);
     overflow: hidden;
+
+    @include responsive(mobile) {
+        width: 19.231vw;
+        height: 7.692vw;
+        border-radius: 3.846vw;
+        box-shadow: 0px 0.962vw 1.923vw 0 rgba(66, 168, 103, 0.45);
+    }
+
     svg {
         width: 5.208vw;
         height: auto;
         border-radius: 0.885vw;
+
+        @include responsive(mobile) {
+            width: 19.231vw;
+            border-radius: 3.846vw;
+        }
     }
 }
 
@@ -247,10 +354,23 @@
     border-radius: 0.885vw;
     box-shadow: 0px 0.260vw 0.521vw 0 rgba(130, 90, 222, 0.45);
     overflow: hidden;
+
+    @include responsive(mobile) {
+        width: 15.385vw;
+        height: 7.692vw;
+        border-radius: 3.846vw;
+        box-shadow: 0px 0.962vw 1.923vw 0 rgba(130, 90, 222, 0.45);
+    }
+
     svg {
         width: 4.167vw;
         height: auto;
         border-radius: 0.885vw;
+
+        @include responsive(mobile) {
+            width: 15.385vw;
+            border-radius: 3.846vw;
+        }
     }
 }
 
@@ -260,9 +380,22 @@
     border-radius: 0.885vw;
     box-shadow: 0px 0.260vw 0.521vw 0 rgba(76, 135, 214, 0.45);
     overflow: hidden;
+
+    @include responsive(mobile) {
+        width: 19.231vw;
+        height: 7.692vw;
+        border-radius: 3.846vw;
+        box-shadow: 0px 0.962vw 1.923vw 0 rgba(76, 135, 214, 0.45);
+    }
+
     svg {
         width: 5.208vw;
         height: auto;
         border-radius: 0.885vw;
+
+        @include responsive(mobile) {
+            width: 19.231vw;
+            border-radius: 3.846vw;
+        }
     }
 }

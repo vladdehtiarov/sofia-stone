@@ -5,15 +5,17 @@
     padding-bottom: 3.333vw;
 
     @include responsive(mobile) {
-        padding-top: 15.833vw;
-        padding-bottom: 10.667vw;
+        padding-top: 16.154vw;
+        padding-bottom: 11.538vw;
     }
 
     .container {
         max-width: 68.750vw;
 
         @include responsive(mobile) {
-            max-width: 95%;
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
         }
     }
 
@@ -25,8 +27,13 @@
             margin-top: 0.469vw;
 
             @include responsive(mobile) {
-                width: 100%;
-                margin-top: 3vw;
+                width: 73.077vw;
+                margin-top: 3.077vw;
+                font-size: 6.154vw;
+                font-weight: 700;
+                line-height: 1.06;
+                text-align: center;
+                color: #333333;
             }
         }
     
@@ -37,7 +44,12 @@
 
             @include responsive(mobile) {
                 width: 100%;
-                font-size: 4.333vw;
+                margin-top: 0;
+                font-size: 4.038vw;
+                font-weight: 500;
+                line-height: 1.33;
+                text-align: center;
+                color: #777777;
             }
         }
     }
@@ -52,7 +64,7 @@
 
         @include responsive(mobile) {
             flex-direction: column;
-            margin-top: 8.500vw;
+            margin-top: 6.538vw;
         }
     }
 
@@ -66,10 +78,10 @@
         position: relative;
 
         @include responsive(mobile) {
-            width: 100%;
-            height: 43.333vw;
-            padding: 0 6vw;
-            margin-top: 6.667vw;
+            width: 84.615vw;
+            height: 38.462vw;
+            margin-top: 7.692vw;
+            border-radius: 10.577vw;
         }
 
     }
@@ -86,7 +98,9 @@
             margin-right: 0;
 
             @include responsive(mobile) {
-                width: 37.500vw;
+                width: 38.462vw;
+                margin-top: 8.654vw;
+                margin-left: 38.462vw;
             }
         }
 
@@ -96,8 +110,8 @@
             bottom: 0;
 
             @include responsive(mobile) {
-               width: 40.333vw;
-               left: 9.500vw;
+               width: 34.808vw;
+               left: 3.462vw;
             }
         }
     }
@@ -109,9 +123,10 @@
             bottom: -1.823vw;
 
             @include responsive(mobile) {
-                width: 50vw;
-                right: 0;
-                bottom: -10vw;
+                width: 44.615vw;
+                left: 49.423vw;
+                right: auto;
+                bottom: 0.385vw;
             }
         }
         
@@ -124,7 +139,8 @@
         margin-top: 3.281vw;
 
         @include responsive(mobile) {
-            margin-top: 11.500vw;
+            margin-top: 8.654vw;
+            margin-left: 3.654vw;
         }
     }
 
@@ -141,7 +157,7 @@
         color: #333333;
 
         @include responsive(mobile) {
-            font-size: 5.333vw;
+            font-size: 4.808vw;
         }
     }
 
@@ -155,9 +171,10 @@
         color: #333333;
 
         @include responsive(mobile) {
-            width: 37.500vw;
-            margin-top: 4.500vw;
-            font-size: 3vw;
+            width: 38.462vw;
+            margin-top: 2.885vw;
+            margin-left: 0.385vw;
+            font-size: 3.077vw;
         }
         
         span {

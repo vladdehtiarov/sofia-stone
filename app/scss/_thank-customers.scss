@@ -1,17 +1,57 @@
 // thank-customers styles
 .thank-customers {
 
+    @include responsive(mobile) {
+        padding-top: 13.269vw;
+        height: auto;
+    }
+
+    .payment-sms__bg-img {
+        @include responsive(mobile) {
+            display: none;
+        }
+    }
+
     .payment-sms__inner {
         padding-top: 3.854vw;
+
+        @include responsive(mobile) {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            box-shadow: none;
+        }
+    }
+
+    .payment-sms__image {
+        @include responsive(mobile) {
+            top: 87.500vw;
+        }
     }
 
     .payment-sms__icons-label {
         width: 100%;
+
+        @include responsive(mobile) {
+            margin-top: -1.538vw;
+        }
     }
 
     .section__title-subtitle {
         margin-top: 0.781vw;
         padding-bottom: 2.188vw;
+
+        @include responsive(mobile) {
+            width: 74.615vw;
+            margin: 0 auto;
+            margin-top: 0.962vw;
+            padding-bottom: 0;
+            font-size: 4.231vw;
+            font-weight: 500;
+            line-height: 1.14;
+            text-align: center;
+            border-bottom: none;
+        }
     }
 
     &__company-item {
@@ -20,15 +60,29 @@
 
     &__rating {
         margin-top: 1.667vw;
+
+        @include responsive(mobile) {
+            margin-top: 132.115vw;
+            padding-top: 0.769vw;
+            padding-bottom: 2.308vw;
+            border-top: 0.192vw solid #cccccc;
+            border-bottom: 0.192vw solid #cccccc;
+        }
     }
 
     &__rating-label {
-        font-family: "Philosopher";
+        font-family: "Philosopher", sans-serif;
         font-size: 1.354vw;
         font-weight: bold;
         line-height: 1.46;
         text-align: left;
         color: #333333;
+
+        @include responsive(mobile) {
+            font-size: 4.615vw;
+            line-height: 1.58;
+            text-align: center;
+        }
     }
 
     &__rating-company {
@@ -39,12 +93,22 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        @include responsive(mobile) {
+            width: 86.346vw;
+            margin: 0 auto;
+            margin-top: 1.731vw;
+        }
     }
 
     .company-item {
 
         &__img {
             width: 6.250vw;
+
+            @include responsive(mobile) {
+                width: 19.808vw;
+            }
 
             img {
                 width: inherit;
@@ -57,17 +121,32 @@
             display: flex;
             justify-content: space-between;
             align-self: flex-start;
+
+            @include responsive(mobile) {
+                width: 18.077vw;
+                margin-left: 1.154vw;
+            }
         }
 
         &__raiting-content {
             margin-top: 0.417vw;
             height: auto;
+
+            @include responsive(mobile) {
+                margin-top: 0.962vw;
+            }
         }
 
         &__raiting-stars {
             width: 3.229vw;
             height: 0.573vw;
             position: relative;
+
+            @include responsive(mobile) {
+                width: 10.385vw;
+                height: 1.923vw;
+            }
+
             svg {
                 width: 3.229vw;
                 height: 0.573vw;
@@ -77,16 +156,26 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
 
+                @include responsive(mobile) {
+                    width: 10.385vw;
+                    height: 1.923vw;
+                }
+
             }
         }
 
         &__raiting-vallue {
-            font-family: "Philosopher";
+            font-family: "Philosopher", sans-serif;
             font-size: 1.563vw;
             font-weight: bold;
             line-height: 1.27;
             text-align: left;
             color: #333333;
+
+            @include responsive(mobile) {
+                font-size: 5vw;
+                line-height: 1.25;
+            }
         }
 
         &__raiting-coment {
@@ -94,8 +183,32 @@
             font-weight: 500;
             text-align: left;
             color: #777777;
+
+            @include responsive(mobile) {
+                font-size: 1.635vw;
+                line-height: 1.7;
+            }
         }
     }
 
+    .choice-materials__icon-wrapper {
+
+       @include responsive(desktop) {
+           display: none;
+       }
+    }
+
+    .payment-sms__icons-list {
+        @include responsive(mobile) {
+            margin-top: 1.346vw;
+            width: 85.192vw;
+        }
+    }
+
+    .slider-block {
+        @include responsive(mobile) {
+            top: 50vw;
+        }
+    }
     
 }

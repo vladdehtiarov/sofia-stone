@@ -7,26 +7,35 @@
         height: auto;
     }
 
+    @include responsive(mobile) {
+        padding: 3.846vw 0;
+        padding-bottom: 3.269vw;
+        margin-top: 0;
+        box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.13);
+
+    }
+
     .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
     }
 
     &__logo {
         display: flex;
         align-items: center;
         margin-left: -0.208vw;
+
+        @include responsive(mobile) {
+            margin-top: 1.154vw;
+        }
         
         img {
             width: 7.917vw;
 
-            // @include responsive(1366px) {
-            //     width: 11.127vw;
-            // }
-
             @include responsive(mobile) {
-                width: 29.333vw;
+                width: 24.038vw;
             }
         }
     }
@@ -40,13 +49,6 @@
         font-weight: 400;
         letter-spacing: 0.02em;
         color: #555555;
-
-        // @include responsive(1366px) {
-        //     width: 13.543vw;
-        //     margin-left: 3.001vw;
-        //     font-size: 0.878vw;
-        //     line-height: 1.171vw;
-        // }
 
         @include responsive(mobile) {
             display: none;
@@ -64,11 +66,12 @@
     }
 
     &__info:nth-child(2) {
-        margin-left: 3.021vw;
+        margin-left: 3.846vw;
+        
+        @include responsive(mobile) {
+            margin-top: 1.154vw;
+        }
 
-        // @include responsive(1366px) {
-        //     margin-left: 4.246vw;
-        // }
     }
 
     &__center {
@@ -105,22 +108,28 @@
 .header__info:nth-child(2) {
     .info__text {
         @include responsive(mobile) {
-            font-size: 2.167vw;
-            line-height: 2.333vw;
+            font-size: 2.308vw;
+            line-height: 1.33;
+            text-align: left;
+            color: #777777;
+        }
+
+        .green-marcker {
+            @include responsive(mobile) {
+                margin-right: 2.692vw;
+            }
         }
     }
 
     .info__title {
         @include responsive(mobile) {
-            font-size: 4vw;
-        }
-    }
-
-    .info__link {
-        a {    
-            @include responsive(mobile) {
-                font-size: 3vw;
-            }
+            margin-top: 0.769vw;
+            font-family: "Philosopher", sans-serif;
+            font-size: 3.462vw;
+            font-weight: 700;
+            letter-spacing: 0.071vw;
+            text-align: right;
+            color: #252525;
         }
     }
 }
@@ -132,10 +141,6 @@
     font-weight: 400;
     color: #777777;
 
-    // @include responsive(1366px) {
-    //     font-size: 0.878vw;
-    //     line-height: 1.171vw;
-    // }
 }
 
 .info__title {
@@ -147,25 +152,27 @@
     letter-spacing: 0.02em;
     color: #252525;
 
-    // @include responsive(1366px) {
-    //     font-size: 1.318vw;
-    // }
 }
 
 .info__link {
     text-align: right;
     display: flex;
     justify-content: flex-end;
+
     a {
         font-family: 'Philosopher', sans-serif;
-        font-size: 0.729vw;
-        line-height: 1.2;
+        font-size: 2.692vw;
         font-weight: 700;
-        text-decoration: underline;
+        text-align: right;
         color: #7da4ff;
+        text-decoration: underline;
+    }
 
-        // @include responsive(1366px) {
-        //     font-size: 1.025vw;
-        // }
+    @include responsive(mobile) {
+        display: block;
+    }
+
+    @include responsive(desktop) {
+        display: none;
     }
 }

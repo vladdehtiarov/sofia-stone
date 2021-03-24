@@ -6,7 +6,26 @@
         position: absolute;
         top: 5.990vw;
         left: 0;
+
+        @include responsive(mobile) {
+            width: 26.346vw;
+            top: auto;
+            bottom: 30.962vw;
+        }
     }
+
+    .payment-sms__image {
+        @include responsive(mobile) {
+            top: 86.346vw;
+        }
+    }
+
+    .slider-block {
+        @include responsive(mobile) {
+            top: 50vw;
+        }
+    }
+
 
     &__inner {
         width: 68.750vw;
@@ -15,6 +34,13 @@
         padding-top: 1.250vw;
         padding-left: 3.854vw;
         position: relative;
+
+        @include responsive(mobile) {
+            width: 100%;
+            height: auto;
+            padding-top: 0;
+            padding-left: 0;
+        }
     }
 
     &__icon-wrapper {
@@ -26,6 +52,21 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include responsive(mobile) {
+            width: 100%;
+            margin-top: 0;
+            margin-left: 0;
+            padding-top: 3.846vw;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .payment-sms__icons-label {
+        @include responsive(mobile) {
+            margin-top: -1.346vw;
+        }
     }
 
     &__partners {
@@ -40,9 +81,23 @@
         justify-content: space-between;
         align-items: center;
 
+        @include responsive(mobile) {
+            width: 100%;
+            margin-top: 136.538vw;
+            padding-top: 2.500vw;
+            padding-bottom: 2.308vw;
+            padding-left: 31.538vw;
+            padding-right: 6.923vw;
+        }
+
         &-item {
             width: 8.333vw;
             margin-top: 0.625vw;
+
+            @include responsive(mobile) {
+                width: 18.846vw;
+                margin-top: 0.577vw;
+            }
 
             &:first-child,
             &:nth-child(2),

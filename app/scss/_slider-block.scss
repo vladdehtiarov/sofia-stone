@@ -1,12 +1,23 @@
 .slider-block {
     width: 47.083vw;
 
+
+    @include responsive(mobile) {
+        width: 100%;
+    }
+
     .slide {
         margin: 0 1.823vw;
         width: 13.542vw;
         height: 23.958vw;
         position: relative;
         overflow: hidden;
+
+        @include responsive(mobile) {
+            width: 50vw;
+            height: 88.462vw;
+            margin: 0 6.731vw;
+        }
 
 
         img {
@@ -27,10 +38,13 @@
         z-index: 1500;
 
         &:hover .slider__btn {
-            width: 3.646vw;
-            height: 3.646vw;
-            background-image: linear-gradient(to bottom, #ff7c54, #fc4c39);
-            transition: all .2s ease;
+            
+            @include responsive(desktop) {
+                width: 3.646vw;
+                height: 3.646vw;
+                background-image: linear-gradient(to bottom, #ff7c54, #fc4c39);
+                transition: all .2s ease;
+            }
         }
 
         .slider__btn {
@@ -47,6 +61,13 @@
             transform: translate(-50%, -50%);
             transition: all .2s ease;
             cursor: pointer;
+
+            @include responsive(mobile) {
+                width: 13.462vw;
+                height: 13.462vw;
+                border-radius: 5.385vw;
+                box-shadow: 0px 1.923vw 7.692vw 0 rgba(251, 88, 72, 0.45);
+            }
         }
 
         img {
@@ -56,15 +77,29 @@
             left: 50%;
             transform: translate(-50%, -50%);
             cursor: pointer;
+
+            @include responsive(mobile) {
+                width: 2.692vw;
+            }
         }
     }
 
     .btn-prew {
         left: -1.458vw;
+
+        @include responsive(mobile) {
+            top: 44.423vw;
+            left: 21.538vw;
+        }
     }
 
     .btn-next {
         left: 13.229vw;
+
+        @include responsive(mobile) {
+            top: 44.423vw;
+            left: 75.577vw;
+        }
 
         img {
             transform: translate(-50%, -50%) rotate(180deg);

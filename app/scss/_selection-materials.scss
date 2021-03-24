@@ -2,10 +2,10 @@
 .selection-materials {
     width: 100%;
     padding-top: 4.427vw;
-    padding-bottom: 3.229vw;
+    padding-bottom: 12.500vw;
 
     @include responsive(mobile) {
-        padding-top: 15.667vw;
+        padding-top: 16.923vw;
         padding-bottom: 11.833vw;
     }
 
@@ -18,7 +18,7 @@
     }
 
     &__title {
-        font-family: "Philosopher";
+        font-family: "Philosopher", sans-serif;
         font-size: 1.875vw;
         font-weight: bold;
         line-height: 1.28;
@@ -26,7 +26,8 @@
         color: #333333;
 
         @include responsive(mobile) {
-            font-size: 6vw;
+            font-size: 6.923vw;
+            line-height: 1;      
         }
     }
 
@@ -40,7 +41,7 @@
         @include responsive(mobile) {
             flex-direction: column;
             justify-content: center;
-            margin-top: 5.667vw;
+            margin-top: 7.692vw;
         }
     }
 
@@ -48,6 +49,7 @@
         .selection-materials__item-img {
             @include responsive(mobile) {
                 margin-top: 0;
+                border-radius: 8.654vw;
             }
         }
     }
@@ -61,10 +63,10 @@
 
         @include responsive(mobile) {
             margin: 0 auto;
-            margin-top: 6.667vw;
-            width: 66.667vw;
-            height: 46.667vw;
-            border-radius: 9.167vw;
+            margin-top: 7.885vw;
+            width: 76.923vw;
+            height: 53.846vw;
+            border-radius: 10.577vw;
         }
 
         img {
@@ -87,8 +89,8 @@
         color: #555555;
 
         @include responsive(mobile) {
-            margin-top: 1.667vw;
-            font-size: 3vw;
+            margin-top: 1.346vw;
+            font-size: 3.462vw;
         }
     }
 }

@@ -29,23 +29,27 @@
 
 .burger-menu {
     display: none;
+
     @include responsive(mobile) {
         display: block;
-        width: 13.333vw;
-        height: 13.333vw;
-        border-radius: 4.333vw;
-        background-image: linear-gradient(-90deg, rgb(248,156,132) 0%, rgb(211,93,83) 100%);
-        box-shadow: 0px 10px 20px 0px rgba(207, 85, 74, .45);
+        width: 15.385vw;
+        height: 15.385vw;
+        border-radius: 5.962vw;
+        background-image: linear-gradient(to bottom, #ff8f6f, #fb5849);
+        box-shadow: 0px 1.923vw 3.846vw 0 rgba(255, 89, 38, 0.55);
         cursor: pointer;
-    }
+        overflow: hidden;
 
-    
+        &:hover {
+            background-image: linear-gradient(to bottom, #ff7c54, #fc4c39);
+        }
+    }
 
     span {
         position: absolute;
-        top: 50%;
+        top: 4.423vw;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
 
         &::before,
         &::after {
@@ -54,23 +58,28 @@
 
         }
 
-        &::before {
-            top: -2vw;
-        }
-
-        &::after {
-            top: 2vw;
-        }
     }
 
     span,
     span::before,
     span::after {
         display: block;
-        width: 6.667vw;
-        height: 1vw;
-        border-radius: 4vw;
+        width: 7.692vw;
+        height: 1.154vw;
+        border-radius: 1.154vw;
         background-color: #fff;
+    }
+
+    span::before {
+        width: 6.538vw;
+        top: 2.692vw;
+        left: 1.154vw;
+    }
+
+    span::after {
+        width: 5.769vw;
+        top: 5.385vw;
+        left: 1.923vw;
     }
 
    
