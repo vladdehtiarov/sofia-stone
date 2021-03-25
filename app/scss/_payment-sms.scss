@@ -245,6 +245,11 @@
 }
 
 #payment-sms_calc {
+
+    @include responsive(mobile) {
+        padding-top: 11.538vw;
+    }
+
     .payment-sms__inner {
         padding-top: 3.542vw;
 

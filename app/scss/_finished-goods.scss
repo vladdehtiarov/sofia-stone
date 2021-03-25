@@ -4,17 +4,37 @@
     padding-top: 4.115vw;
     padding-bottom: 3.542vw;
 
+
+    @include responsive(mobile) {
+        padding-top: 14.615vw;
+        padding-bottom: 9.615vw;
+    }
+
     .section__title {
         &-subtitle {
             width: 100%;
             font-size: 1.354vw;
             line-height: 1.08;
+
+            @include responsive(mobile) {
+                width: 78.846vw;
+                font-size: 4.231vw;
+                font-weight: 500;
+                line-height: 1.36;
+            }
         }
 
         &-title {
             margin-top: 0.521vw;
             font-size: 2.500vw;
             line-height: 1.04;
+
+            @include responsive(mobile) {
+                margin-top: 1.154vw;
+                font-size: 7.115vw;
+                font-weight: 700;
+                line-height: 1.05;
+            }
         }
     }
 
@@ -40,6 +60,14 @@
             flex-direction: row;
             align-items: center;
             justify-content: flex-start;
+
+            @include responsive(mobile) {
+                margin-top: 3.846vw;
+                padding: 5.577vw 0;
+                padding-left: 8.654vw;
+                padding-top: 4.615vw;
+                
+            }
         }
 
         &__figure {
@@ -49,17 +77,31 @@
             border-radius: 0.521vw;
             background-color: #c4c4c4;;
             transform: rotate(45deg);
+
+            @include responsive(mobile) {
+                width: 10.769vw;
+                height: 10.769vw;
+                border-radius: 1.154vw;
+            } 
         }
 
         &__name {
             width: 12vw;
             margin-left: 1.875vw;
-            font-family: "Philosopher";
+            font-family: "Philosopher", sans-serif;
             font-size: 1.146vw;
             font-weight: bold;
             line-height: 1.14;
             text-align: left;
             color: #333333;
+
+            @include responsive(mobile) {
+                width: 40.385vw;
+                margin-left: 6.154vw;
+                font-size: 3.846vw;
+                line-height: 1.15;
+                margin-top: -0.769vw;
+            }
 
             span {
                 font-style: italic;
@@ -71,6 +113,11 @@
             margin-top: 1.719vw;
             margin-left: -0.417vw;
 
+            @include responsive(mobile) {
+                margin-top: 4.615vw;
+                margin-left: -6.538vw;
+            }
+
             &-items {
                 margin-top: 1.302vw;
                 height: 3.646vw;
@@ -80,6 +127,15 @@
                 justify-content: space-between;
                 font-size: 0.833vw;
                 color: #929292;
+
+                @include responsive(mobile) {
+                    height: auto;
+                    margin-top: 2.308vw;
+                    font-size: 3.077vw;
+                    line-height: 1.63;
+            
+                }
+
             }
 
             &-item {
@@ -95,19 +151,59 @@
                 line-height: 1.5;
                 text-align: left;
                 color: #333333;
+                
+                @include responsive(mobile) {
+                    font-size: 3.846vw;
+                }
             }
 
             .pricelist-item {
                 &__name {
                     width: 8.854vw;
                     text-align: left;
+
+                    @include responsive(mobile) {
+                        width: 36.154vw;
+                    }
+                }
+            }
+
+            .product-total-time {
+                @include responsive(mobile) {
+                    margin-left: -3.269vw;
+                }
+            }
+
+            .product-total {
+                @include responsive(mobile) {
+                    margin-top: -0.769vw;
+                }
+            }
+            
+        }
+
+        .product-center-prise {
+            .pricelist-item__price {
+                margin-left: -3.269vw;
+            }
+        }
+
+        .product-total {
+            .product-total-price {
+                @include responsive(mobile) {
+                    // margin-left: -17px;
                 }
             }
         }
 
+
         &__button-wrapper {
             display: inline-block;
             margin-top: 1.615vw;
+
+            @include responsive(mobile) {
+                margin-top: 3.462vw;
+            }
 
             .prouct-btn {
                 display: flex;
@@ -128,6 +224,15 @@
                 overflow: hidden;
                 position: relative;
 
+                @include responsive(mobile) {
+                    width: 57.692vw;
+                    height: 11.538vw;
+                    border-radius: 5vw;
+                    box-shadow: 0px 1.923vw 7.692vw 0 rgba(251, 88, 72, 0.45);
+                    font-size: 2.692vw;
+                    letter-spacing: 0.108vw;
+                }
+
                 &:hover {
                     background-image: linear-gradient(to bottom, #ff7c54, #fc4c39);
                 }
@@ -138,11 +243,19 @@
     &__slider {
         margin-top: 0.104vw;
 
+        @include responsive(mobile) {
+            margin-top: 0;
+        }
+
         .slide {
             width: auto;
             height: 41.979vw;
             position: relative;
             outline: none;
+
+            @include responsive(mobile) {
+                height: 192.308vw;
+            }
             
 
             &-inner {
@@ -158,6 +271,15 @@
                 top: 1.302vw;
                 left: 50%;
                 transform: translateX(-50%);
+
+                @include responsive(mobile) {
+                    width: 76.923vw;
+                    height: 173.077vw;
+                    border-radius: 10.577vw;
+                    box-shadow: 0px 3.462vw 9.019vw 0.788vw rgba(0, 0, 0, 0.14);
+                    flex-direction: column;
+                    top: 4.808vw;
+                }
             }
         }
     }
@@ -214,18 +336,29 @@
     }
 
     .slick-dots {
-        height: 8px !important;
+        height: 8px;
         margin-top: -1.302vw;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
 
+        @include responsive(mobile) {
+            height: 4.231vw;
+            margin-top: -10.769vw;
+        }
+
         li {
             width: 0.521vw;
             height: 0.521vw;
             margin-left: 1.042vw;
             position: relative;
+
+            @include responsive(mobile) {
+                width: 1.923vw;
+                height: 1.923vw;
+                margin-left: 3.846vw;
+            }
 
             &:first-child {
                 margin-left: 0;
@@ -245,6 +378,11 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+
+                @include responsive(mobile) {
+                    width: 1.923vw;
+                    height: 1.923vw;
+                }
             }
         }
 
@@ -252,6 +390,37 @@
             button {
                 background-color: #fe5644;
                 
+                @include responsive(mobile) {
+                    background-color: #7da4ff;
+                    width: 4.231vw;
+                    height: 4.231vw;
+                    position: relative;
+                    top: 0.192vw;
+
+                    &::before,
+                    &::after {
+                        content: '';
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        pointer-events: none;
+                        cursor: pointer;
+                    }
+
+                    &::before {
+                        width: 2.692vw;
+                        height: 2.692vw;
+                        background-color: #fff;
+                    }
+
+                    &::after {
+                        width: 1.923vw;
+                        height: 1.923vw;
+                        background-color: #7da4ff;
+                    }
+                }
             }
         }
     }
@@ -263,6 +432,10 @@
         align-items: center;
         
 
+        @include responsive(mobile) {
+            width: 100%;
+        }
+
         &__big-img {
             width: 41.667vw;
             height: 37.500vw;
@@ -271,6 +444,15 @@
             border-bottom-left-radius: 2.865vw;
             overflow: hidden;
             position: relative;
+
+            @include responsive(mobile) {
+                width: 100%;
+                height: 69.231vw;
+                border-top-left-radius: 10.577vw;
+                border-top-right-radius: 10.577vw;
+                border-bottom-left-radius: 0;
+                box-shadow: inset 0 0 22.500vw 0 rgba(168, 162, 180, 0.3);
+            }
 
             .big-img {
                 width: inherit;
@@ -286,11 +468,22 @@
         
     }
 
+    .product-total-price {
+        @include responsive(mobile) {
+            position: absolute;
+            right: 14.423vw;
+        }
+    }
+
     .slider-thumbs__small-images {
         margin-top: 5.208vw;
         display: flex;
         justify-content: flex-start;
-        align-items:center
+        align-items:center;
+
+        @include responsive(mobile) {
+            margin-top: 3.846vw;
+        }
     }
 
     .small-image {
@@ -303,8 +496,21 @@
         position: relative;
         cursor: pointer;
 
+        @include responsive(mobile) {
+            width: 19.231vw;
+            height: 19.231vw;
+            margin-top: 0;
+            margin-left: 3.846vw;
+            border-radius: 5.769vw;
+            border: solid 0.577vw #dcdcdc;
+        }
+
         &:hover {
             border: solid 0.156vw #fe5644;
+
+            @include responsive(mobile) {
+                border: solid 0.577vw #fe5644;
+            }
         }
 
         &:first-child {
@@ -319,11 +525,21 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+
+            @include responsive(mobile) {
+                width: 15.385vw;
+                height: 15.385vw;
+                border-radius: 3.846vw;
+            }
         }
     }
 
     .small-image_active {
         border: solid 0.156vw #fe5644;
+
+        @include responsive(mobile) {
+            border: solid 0.577vw #fe5644;
+        }
     }
     
 }

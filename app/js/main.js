@@ -116,7 +116,18 @@ $('.finished-goods__slider').slick({
     nextArrow: `<button class="slider-control btn-next">
                     <div class="slider__btn next-slide"></div>
                     <img src="../images/arrow.svg" alt="arrow">
-                </button>`, 
+                </button>`,
+    responsive: [
+        {
+        breakpoint: 768,
+            settings: {
+                centerMode: false,
+                arrows: false,
+                centerPadding: '2px',
+
+            }
+        }
+    ]
 });
 
 
