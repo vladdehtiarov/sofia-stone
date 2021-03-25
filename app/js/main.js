@@ -1,13 +1,25 @@
+// Mobile menu
+const mobileMenu = document.querySelector('.mobile-menu');
 const burgerMenu = document.querySelector('.burger-menu');
-const headerMenu = document.querySelector('.header-menu');
-const menuClose = document.querySelector('.menu__close');
+const closeMenu = document.querySelector('.close-btn');
+const menuLinks = document.querySelectorAll('.menu-link');
+
+const hideMenu = () => {
+    mobileMenu.classList.add('hide');
+};
 
 burgerMenu.addEventListener('click', () => {
-    headerMenu.classList.add('show');
+    mobileMenu.classList.remove('hide');
 });
 
-menuClose.addEventListener('click', () => {
-    headerMenu.classList.remove('show');
+closeMenu.addEventListener('click', () => {
+    hideMenu();
+});
+
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        hideMenu();
+    });
 });
 
 const btn = document.querySelectorAll('.blick');

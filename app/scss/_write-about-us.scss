@@ -35,10 +35,10 @@
         right: 0;
 
         @include responsive(mobile) {
-            width: 522px;
+            width: 100.385vw;
             top: auto;
             right: 0;
-            bottom: 30px;
+            bottom: 5.769vw;
         }
     }
 
@@ -61,7 +61,7 @@
 
         @include responsive(mobile) {
             width: 100%;
-            padding-top: 58px;
+            padding-top: 11.154vw;
         }
 
         &:first-child {
@@ -91,14 +91,14 @@
             color: #333333;
 
             @include responsive(mobile) {
-                padding-left: 40px;
-                font-size: 26px;
+                padding-left: 7.692vw;
+                font-size: 5vw;
                 line-height: 0.92;
             }
         }
 
         &-subtitle {
-            padding-left: 40px;
+            padding-left: 7.692vw;
             margin-top: 0.104vw;
             font-size: 0.833vw;
             font-weight: 500;
@@ -107,8 +107,8 @@
             color: #777777;
 
             @include responsive(mobile) {
-                margin-top: 6px;
-                font-size: 16px;
+                margin-top: 1.154vw;
+                font-size: 3.077vw;
             }
             
             span {
@@ -128,9 +128,9 @@
 
         @include responsive(mobile) {
             width: 100%;
-            margin-top: 12px;
-            padding: 0 20px;
-            padding-bottom: 20px;
+            margin-top: 2.308vw;
+            padding: 0 3.846vw;
+            padding-bottom: 3.846vw;
             overflow: hidden;
             overflow-x: scroll;
         }
@@ -141,8 +141,8 @@
         height: auto;
 
         @include responsive(mobile) {
-            width: 200px;
-            margin-left: 20px;
+            width: 38.462vw;
+            margin-left: 3.846vw;
         }
         
         &-img {
@@ -153,9 +153,9 @@
             position: relative;
 
             @include responsive(mobile) {
-                width: 200px;
-                height: 140px;
-                border-radius: 25px;
+                width: 38.462vw;
+                height: 26.923vw;
+                border-radius: 4.808vw;
             }
 
             img {
@@ -179,9 +179,9 @@
             color: #333333;
 
             @include responsive(mobile) {
-                margin-top: 8px;
-                margin-left: 10px;
-                font-size: 16px;
+                margin-top: 1.538vw;
+                margin-left: 1.923vw;
+                font-size: 3.077vw;
             }
         }
 
@@ -195,9 +195,9 @@
             color: #777777;
 
             @include responsive(mobile) {
-                width: 173px;
-                margin-left: 10px;
-                font-size: 12px;
+                width: 33.269vw;
+                margin-left: 1.923vw;
+                font-size: 2.308vw;
             }
 
             span {
@@ -211,13 +211,13 @@
 
         @include responsive(mobile) {
             width: 100%;
-            margin-top: 17px;
-            padding-bottom: 377px;
+            margin-top: 3.269vw;
+            padding-bottom: 72.500vw;
         }
 
         .write-about-us__block-subtitle {
             @include responsive(mobile) {
-                margin-top: 2px;
+                margin-top: 0.385vw;
             }
         }
     }
@@ -226,13 +226,13 @@
         margin-top: 4.063vw;
 
         @include responsive(mobile) {
-            margin-top: 7px;
+            margin-top: 1.346vw;
         }
 
         .write-about-us__block-subtitle {
             @include responsive(mobile) {
-                margin-top: 4px;
-                margin-left: 2px;
+                margin-top: 0.769vw;
+                margin-left: 0.385vw;
             }
         }
 
@@ -241,7 +241,7 @@
             margin-top: 1.198vw;
 
             @include responsive(mobile) {
-                margin-top: 14px;
+                margin-top: 2.692vw;
             }
         }
 
@@ -251,8 +251,8 @@
                 border-radius: 2.344vw;
 
                 @include responsive(mobile) {
-                    height: 200px;
-                    border-radius: 45px;
+                    height: 38.462vw;
+                    border-radius: 8.654vw;
                 }
             }
         }

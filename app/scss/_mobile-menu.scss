@@ -1,0 +1,179 @@
+// Mobile menu styles
+.mobile-menu {
+    @include responsive(desktop) {
+        display: none;
+    }
+
+    @include responsive(mobile) {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 2000;
+        overflow-y: scroll;
+    }
+    
+
+    &__title {
+
+        @include responsive(mobile) {
+            width: 100%;
+            height: auto;
+            padding-top: 8.269vw;
+            padding-bottom: 7.692vw;
+            padding-left: 7.115vw;
+            border-bottom: 0.192vw solid #cccccc;
+            font-size: 10.385vw;
+            font-weight: 700;
+            line-height: 0.7;
+            text-align: left;
+            color: #c9c9c9;
+            position: relative;
+        }
+        
+    }
+
+    .close-btn {
+        @include responsive(mobile) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15.385vw;
+            height: 15.385vw;
+            border-radius: 5.962vw;
+            background-image: linear-gradient(to bottom, #ff8f6f, #fb5849);
+            box-shadow: 0px 1.923vw 3.846vw 0 rgba(255, 89, 38, 0.55);
+            cursor: pointer;
+            overflow: hidden;
+            position: absolute;
+            top: 3.846vw;
+            right: 5.769vw;
+            font-size: 14.615vw;
+            font-weight: 400;
+            color: #fff;
+    
+            &:hover {
+                background-image: linear-gradient(to bottom, #ff7c54, #fc4c39);
+            }
+        }
+    }
+
+    &__inner {
+
+        @include responsive(mobile) {
+            padding-top: 5.385vw;
+            padding-left: 7.308vw;
+            padding-bottom: 9.231vw;
+        }
+        
+    }
+
+    .menu-item {
+
+        @include responsive(mobile) {
+            margin: 0.192vw 0;
+        }
+
+        .menu-link {
+            @include responsive(mobile) {
+                font-family: "Montserrat", sans-serif;
+                font-size: 5.769vw;
+                font-weight: 600;
+                line-height: 2.13;
+                letter-spacing: normal;
+                text-align: left;
+                color: #333333;
+            }
+            
+            &:hover {
+                @include responsive(mobile) {
+                    color: #fe5644;
+                    border-bottom: 0.385vw solid #fe5644;
+                }
+            }
+        }
+    }
+
+    .choice-materials__icon-wrapper {
+        @include responsive(mobile) {
+            padding-top: 4.038vw;
+            padding-bottom: 4.615vw;
+            border-top: 0.192vw solid #cccccc;
+            border-bottom: 0.192vw solid #cccccc;
+        }
+        
+        svg {
+            @include responsive(mobile) {
+                width: inherit;
+                height: inherit;
+            }
+        }
+
+        .payment-sms__icons-list {
+            @include responsive(mobile) {
+                width: 43.077vw;
+                margin-top: 0.769vw;
+                margin-right: 6.346vw;
+            }
+        }
+
+        .icons-item__label {
+            @include responsive(mobile) {
+                margin-top: 1.346vw;
+                font-size: 2.308vw;
+                font-weight: 500;
+                line-height: 1.33;
+                letter-spacing: 0.092vw;
+                text-align: center;
+            } 
+        }
+        
+        .payment-sms__icons-label {
+            @include responsive(mobile) {
+                margin-top: -2.692vw;
+            }
+        }
+    }
+
+    &__adress {
+        @include responsive(mobile) {
+            text-align: center;
+            padding-top: 5.577vw;
+            padding-bottom: 6.538vw;
+        }
+
+        &-item:last-child {
+            @include responsive(mobile) {
+                margin-top: 4.615vw;
+            }
+        } 
+
+        &-title {
+            @include responsive(mobile) {
+                font-size: 3.558vw;
+                font-weight: 400;
+                line-height: 0.86;
+                letter-spacing: normal;
+                color: #777777;
+            }
+        }
+
+        &-subtitle {
+            @include responsive(mobile) {
+                margin-top: 1.154vw;
+                font-family: "Philosopher", sans-serif;
+                font-size: 5.865vw;
+                font-weight: 700;
+                letter-spacing: 0.117vw;
+                color: #252525;
+            }
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
