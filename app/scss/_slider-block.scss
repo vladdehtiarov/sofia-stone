@@ -88,7 +88,7 @@
         left: -1.458vw;
 
         @include responsive(mobile) {
-            top: 44.423vw;
+            top: 50%;
             left: 21.538vw;
         }
     }
@@ -97,8 +97,9 @@
         left: 13.229vw;
 
         @include responsive(mobile) {
-            top: 44.423vw;
-            left: 75.577vw;
+            top: 50%;
+            left: auto;
+            right: 21.538vw;
         }
 
         img {
