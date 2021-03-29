@@ -42,7 +42,8 @@
         padding-bottom: 2.188vw;
 
         @include responsive(mobile) {
-            width: 74.615vw;
+            // width: 74.615vw;
+            width: 80%;
             margin: 0 auto;
             margin-top: 0.962vw;
             padding-bottom: 0;

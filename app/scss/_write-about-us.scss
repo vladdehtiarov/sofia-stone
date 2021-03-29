@@ -195,7 +195,8 @@
             color: #777777;
 
             @include responsive(mobile) {
-                width: 33.269vw;
+                // width: 33.269vw;
+                width: 100%;
                 margin-left: 1.923vw;
                 font-size: 2.308vw;
             }

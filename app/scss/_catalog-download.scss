@@ -125,7 +125,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 0.938vw;
             font-weight: 500;
-            line-height: 0.89;
+            line-height: 1.2;
             text-align: left;
             color: #7da4ff;
 
@@ -139,7 +139,7 @@
                 font-family: 'Montserrat', sans-serif;
                 font-size: 0.938vw;
                 font-weight: 500;
-                line-height: 0.89;
+                line-height: 1.2;
                 color: #7da4ff;
 
                 @include responsive(mobile) {

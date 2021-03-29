@@ -148,8 +148,8 @@
         color: #333333;
 
         @include responsive(mobile) {
-            // width: 41.154vw;
-            width: 46.923vw;
+            width: 100%;
+            // width: 46.923vw;
             margin-top: -1.731vw;
             padding-left: 5.769vw;
             font-size: 4.231vw;
@@ -165,7 +165,8 @@
         justify-content: space-between;
 
         @include responsive(mobile) {
-            width: 42.692vw;
+            // width: 42.692vw;
+            width: 92%;
             margin-top: 1.154vw;
             margin-right: 7.115vw;
         }

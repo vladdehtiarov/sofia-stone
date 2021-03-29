@@ -17,6 +17,11 @@
 
     .container {
         max-width: 68.750vw;
+
+        @include responsive(mobile) {
+            width: 100%;
+            max-width: 100%;
+        }
     }
 
     .section__title-title {
@@ -25,6 +30,8 @@
         @include responsive(mobile) {
             font-size: 9.231vw;
             text-align: center;
+
+            padding-bottom: 14.808vw;
         }
     }
 
@@ -39,11 +46,17 @@
         color: #333333;
 
         @include responsive(mobile) {
-            width: 83.077vw;
-            margin-top: 3.269vw;
+            // width: 83.077vw;
+            // margin-top: 3.269vw;
             font-size: 5vw;
             text-align: center;
             line-height: 1.23;
+
+            position: absolute;
+            width: 95%;
+            top: 11.923vw;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 
@@ -147,6 +160,8 @@
         @include responsive(mobile) {
             flex-direction: column;
             align-items: center;
+
+            position: relative;
         }
     }
 

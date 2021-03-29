@@ -17,6 +17,11 @@
     }
 
     .section__title {
+        @include responsive(mobile) {
+            position: relative;
+            padding-top: 21.346vw;
+        }
+
         &-subtitle {
             width: 41.927vw;
             font-size: 1.146vw;
@@ -25,8 +30,16 @@
             color: #555555;
 
             @include responsive(mobile) {
-                margin-top: 0;
-                width: 81.538vw;
+                // margin-top: 0;
+                // width: 81.538vw;
+                // font-size: 4.231vw;
+                // line-height: 1.27;
+                // text-align: center;
+                position: absolute;
+                top: -2.115vw;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 95%;
                 font-size: 4.231vw;
                 line-height: 1.27;
                 text-align: center;

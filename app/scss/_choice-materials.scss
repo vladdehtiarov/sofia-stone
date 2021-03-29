@@ -11,6 +11,7 @@
             width: 26.346vw;
             top: auto;
             bottom: 30.962vw;
+            z-index: 1500;
         }
     }
 
@@ -96,7 +97,7 @@
 
             @include responsive(mobile) {
                 width: 18.846vw;
-                margin-top: 0.577vw;
+                margin-top: 1.154vw;
             }
 
             &:first-child,

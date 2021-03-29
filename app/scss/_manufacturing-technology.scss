@@ -132,6 +132,10 @@
         
         .manufacturing-technology__text {
             letter-spacing: 0.019vw;
+
+            @include responsive(mobile) {
+                width: 60%;
+            }
         }
     }
 
@@ -171,7 +175,8 @@
         color: #333333;
 
         @include responsive(mobile) {
-            width: 38.462vw;
+            // width: 38.462vw;
+            width: 100%;
             margin-top: 2.885vw;
             margin-left: 0.385vw;
             font-size: 3.077vw;

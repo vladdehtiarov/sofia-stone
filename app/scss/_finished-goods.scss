@@ -387,6 +387,12 @@
         }
 
         .slick-active {
+            @include responsive(mobile) {
+                width: 4.231vw;
+                height: 4.231vw;
+                position: relative;
+            }
+
             button {
                 background-color: #fe5644;
                 
@@ -394,8 +400,10 @@
                     background-color: #7da4ff;
                     width: 4.231vw;
                     height: 4.231vw;
-                    position: relative;
-                    top: 0.192vw;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
 
                     &::before,
                     &::after {
