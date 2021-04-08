@@ -47,6 +47,8 @@
         align-items: center;
     }
 
+
+
     .product {
 
         &__label {
@@ -128,6 +130,8 @@
                 font-size: 0.833vw;
                 color: #929292;
 
+
+
                 @include responsive(mobile) {
                     height: auto;
                     margin-top: 2.308vw;
@@ -142,6 +146,11 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
+
+                @include responsive(desktop) {
+                    width: 100%;
+                    justify-content: space-between;
+                }
             }
 
             .product-deadline,
